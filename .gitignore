@@ -5,4 +5,7 @@ shfmt
 shellcheck
 *.idea
 *.DS_Store
-.vscode/*
+.vscode/configurationCache.log
+.vscode/dryrun.log
+.vscode/settings.json
+.vscode/targets.log
