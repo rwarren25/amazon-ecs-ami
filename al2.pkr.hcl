@@ -1,34 +1,39 @@
 locals {
-  ami_name_al2 = "${var.ami_name_prefix_al2}-hvm-2.0.${var.ami_version}-x86_64-ebs"
+  ami_name_al2 = "hardened-ecs-container-instance-al2-image-${formatdate("YYYY-MM-DD", timestamp())}"
 }
 
 source "amazon-ebs" "al2" {
   ami_name        = "${local.ami_name_al2}"
-  ami_description = "Amazon Linux AMI 2.0.${var.ami_version} x86_64 ECS HVM GP2"
+  ami_description = "Latest CIS Hardened Amazon Linux 2 Benchmark - Level 1"
   instance_type   = "c5.large"
   launch_block_device_mappings {
     volume_size           = var.block_device_size_gb
     delete_on_termination = true
     volume_type           = "gp2"
     device_name           = "/dev/xvda"
+    encrypted             = true
   }
   region = var.region
   source_ami_filter {
     filters = {
       name = "${var.source_ami_al2}"
+      architecture = "x86_64"
     }
-    owners      = ["amazon"]
+    owners = ["679593333241"]
     most_recent = true
   }
   ssh_username = "ec2-user"
   tags = {
-    os_version          = "Amazon Linux 2"
-    source_image_name   = "{{ .SourceAMIName }}"
-    ecs_runtime_version = "Docker version ${var.docker_version}"
-    ecs_agent_version   = "${var.ecs_agent_version}"
-    ami_type            = "al2"
-    ami_version         = "2.0.${var.ami_version}"
+    os_version              = "Amazon Linux 2"
+    source_image_name       = "{{ .SourceAMIName }}"
+    source_image_createdate = "{{ .SourceAMICreationDate }}"
+    ecs_runtime_version     = "Docker version ${var.docker_version}"
+    ecs_agent_version       = "${var.ecs_agent_version}"
+    ami_type                = "al2"
   }
+  profile         = var.profile
+  vpc_id          = var.vpc_id
+  subnet_id       = var.subnet_id
 }
 
 build {
@@ -45,6 +50,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo mv /tmp/90_ecs.cfg /etc/cloud/cloud.cfg.d/90_ecs.cfg",
@@ -58,6 +64,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo mv /tmp/29-ecs-banner-begin /etc/update-motd.d/29-ecs-banner-begin",
@@ -71,6 +78,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo mv /tmp/31-ecs-banner-finish /etc/update-motd.d/31-ecs-banner-finish",
@@ -79,6 +87,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "mkdir /tmp/additional-packages"
@@ -91,6 +100,20 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    script = "scripts/falcon-al2-download.sh"
+    environment_vars = [
+      "CLIENT_ID=${var.cs_falcon_client_id}",
+      "CLIENT_SECRET=${var.cs_falcon_client_secret}",
+      "FILENAME=${var.cs_falcon_filename}",
+      "CID=${var.cs_falcon_cid}",
+      "EXE=${var.cs_falcon_exe}",
+      "BASEURL=${var.cs_falcon_baseurl}"
+    ]
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo yum install -y ${local.packages_al2}"
@@ -98,6 +121,16 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    inline_shebang = "/bin/sh -ex"
+    inline = [
+      "sudo iptables -A INPUT -i docker0 -d 127.0.0.0/8 -p tcp -m tcp --dport 51679 -j ACCEPT",
+      "sudo service iptables save"
+    ]
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-docker.sh"
     environment_vars = [
       "DOCKER_VERSION=${var.docker_version}",
@@ -114,6 +147,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo mv /tmp/amzn2-extras.repo /etc/yum.repos.d/amzn2-extras.repo"
@@ -121,6 +155,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-ecs-init.sh"
     environment_vars = [
       "REGION=${var.region}",
@@ -134,10 +169,29 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-additional-packages.sh"
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    environment_vars = [
+      "CID=${var.cs_falcon_cid}",
+      "EXE=${var.cs_falcon_exe}"
+    ]
+    inline_shebang = "/bin/sh -ex"
+    inline = [
+      "echo \"Setting Falcon sensor settings\"",
+      "sudo $EXE -s -f --cid=$CID",
+      "sudo $EXE -d -f --aid",
+      "sudo $EXE -s --billing=metered",
+      "sudo find /etc/rc.d -name \"S05falcon*\" -exec rm -rf {} \\;",
+      "echo \"Falcon sensor settings complete\""
+    ]
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-exec-dependencies.sh"
     environment_vars = [
       "REGION=${var.region}",
@@ -147,15 +201,18 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/append-efs-client-info.sh"
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = ["AMI_TYPE=${source.name}"]
     script           = "scripts/enable-ecs-agent-inferentia-support.sh"
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = [
       "AMI_TYPE=${source.name}",
       "AIR_GAPPED=${var.air_gapped}"
@@ -164,6 +221,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo usermod -a -G docker ec2-user"
@@ -171,10 +229,12 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/enable-services.sh"
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/cleanup.sh"
   }
 

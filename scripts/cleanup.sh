@@ -62,6 +62,7 @@ SSH_FILES=(
 echo "Cleaning up ssh files"
 cleanup "${SSH_FILES[@]}"
 USERS=$(ls /home/)
+set +e
 for user in $USERS; do
     echo Deleting /home/"$user"/.ssh/authorized_keys
     sudo find /home/"$user"/.ssh/authorized_keys -type f -exec shred -zuf {} \;
@@ -72,6 +73,7 @@ for user in $USERS; do
         exit 1
     fi
 done
+set -e
 
 INSTANCE_LOG_FILES=(
     "/var/log/audit/audit.log"
