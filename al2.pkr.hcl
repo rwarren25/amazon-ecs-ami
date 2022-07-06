@@ -184,6 +184,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-managed-daemons.sh"
     environment_vars = [
       "REGION=${var.region}",
@@ -195,6 +196,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-additional-packages.sh"
   }
 
@@ -244,12 +246,14 @@ build {
   ### If necessary, reboot worker instance to install kernel update for enable-ecs-agent-inferentia-support or
   ### enable-ecs-agent-gpu-support scripts that factor in kernel version.
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars  = ["AMI_TYPE=${source.name}"]
     expect_disconnect = "true"
     script            = "scripts/al2/reboot-for-kernel-upgrade.sh"
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = ["AMI_TYPE=${source.name}"]
     pause_before     = "10s" # pause for starting the reboot
     script           = "scripts/enable-ecs-agent-inferentia-support.sh"
