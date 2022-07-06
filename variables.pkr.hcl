@@ -365,3 +365,51 @@ variable "neu_instance_types" {
   description = "List of available in-region instance types for NEU platform"
   default     = ["trn1.2xlarge"]
 }
+
+variable "profile" {
+  type        = string
+  description = "Specify aws credentials profile to use"
+  default     = "devacct"
+}
+
+variable "vpc_id" {
+  type        = string
+  description = "ID of VPC to deploy to"
+  default     = "vpc-0c145c21cff6bc9e6"
+}
+
+variable "subnet_id" {
+  type        = string
+  description = "ID of subnet to deploy to"
+  default     = "subnet-0250a5568a8350cd8"
+}
+
+variable "cs_falcon_client_id" {
+  type        = string
+  description = "API client ID for CrowdStrike environment"
+}
+
+variable "cs_falcon_client_secret" {
+  type        = string
+  description = "API client secret for CrowdStrike environment"
+}
+
+variable "cs_falcon_filename" {
+  type        = string
+  description = "Filename of CrowdStrike Falcon installer"
+}
+
+variable "cs_falcon_cid" {
+  type        = string
+  description = "Customer ID for CrowdStrike environment"
+}
+
+variable "cs_falcon_exe" {
+  type        = string
+  description = "Full path of CrowdStrike Falcon executable"
+}
+
+variable "cs_falcon_baseurl" {
+  type        = string
+  description = "Base URL of CrowdStrike API"
+}
