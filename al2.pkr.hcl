@@ -1,5 +1,5 @@
 locals {
-  ami_name_al2 = "hardened-ecs-container-instance-al2-image-${formatdate("YYYY-MM-DD", timestamp())}"
+  ami_name_al2 = "hardened-ecs-container-instance-unverified-al2-image-${formatdate("YYYY-MM-DD", timestamp())}"
 }
 
 source "amazon-ebs" "al2" {
