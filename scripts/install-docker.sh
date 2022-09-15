@@ -14,5 +14,5 @@ fi
 sudo yum install -y "docker-$DOCKER_VERSION" "containerd-$CONTAINERD_VERSION"
 sudo mkdir -p /usr/local/lib/docker/cli-plugins
 sudo curl -SL "https://github.com/docker/compose/releases/download/v$DOCKER_COMPOSE_VERSION/docker-compose-linux-x86_64" \
- -o "/usr/local/bin/docker-compose"
-sudo chmod +x "/usr/local/bin/docker-compose"
+ -o "/usr/local/lib/docker/cli-plugins/docker-compose"
+sudo chmod +x "/usr/local/lib/docker/cli-plugins/docker-compose"
