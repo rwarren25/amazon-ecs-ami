@@ -12,7 +12,8 @@ if command -v amazon-linux-extras; then
 fi
 
 sudo yum install -y "docker-$DOCKER_VERSION" "containerd-$CONTAINERD_VERSION"
-sudo mkdir -p "/usr/local/lib/docker/cli-plugins"
+sudo mkdir -m 755 "/usr/local/lib/docker"
+sudo mkdir -m 755 "/usr/local/lib/docker/cli-plugins"
 sudo curl -SL "https://github.com/docker/compose/releases/download/v$DOCKER_COMPOSE_VERSION/docker-compose-linux-x86_64" \
  -o "/usr/local/lib/docker/cli-plugins/docker-compose"
-sudo chmod -R 755 "/usr/local/lib/docker/cli-plugins/docker-compose"
+sudo chmod 755 "/usr/local/lib/docker/cli-plugins/docker-compose"
