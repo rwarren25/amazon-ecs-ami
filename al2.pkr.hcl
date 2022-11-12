@@ -215,18 +215,7 @@ build {
     script           = "scripts/enable-ecs-agent-inferentia-support.sh"
   }
 
-
-
   provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
-    environment_vars = ["AMI_TYPE=${source.name}"]
-    script           = "scripts/al2/install-kernel5dot10.sh"
-  }
-
-
-
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = ["AMI_TYPE=${source.name}"]
     script           = "scripts/al2/install-kernel5dot10.sh"
   }

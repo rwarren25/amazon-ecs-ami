@@ -93,21 +93,6 @@ variable "source_ami_al2arm" {
   description = "Amazon Linux 2 ARM source AMI to build from."
 }
 
-variable "source_ami_al2kernel5dot10" {
-  type        = string
-  description = "Amazon Linux 2 Kernel 5.10 source AMI to build from."
-}
-
-variable "source_ami_al2kernel5dot10arm" {
-  type        = string
-  description = "Amazon Linux 2 Kernel 5.10 ARM source AMI to build from."
-}
-
-variable "source_ami_al2023" {
-  type        = string
-  description = "Amazon Linux 2023 source AMI to build from."
-}
-
 variable "source_ami_al2023arm" {
   type        = string
   description = "Amazon Linux 2023 ARM source AMI to build from."
