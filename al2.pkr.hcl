@@ -41,7 +41,9 @@ build {
     "source.amazon-ebs.al2",
     "source.amazon-ebs.al2arm",
     "source.amazon-ebs.al2gpu",
-    "source.amazon-ebs.al2inf"
+    "source.amazon-ebs.al2inf",
+    "source.amazon-ebs.al2kernel5dot10",
+    "source.amazon-ebs.al2kernel5dot10arm"
   ]
 
   provisioner "file" {
@@ -217,6 +219,11 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = ["AMI_TYPE=${source.name}"]
     script           = "scripts/enable-ecs-agent-inferentia-support.sh"
+  }
+
+  provisioner "shell" {
+    environment_vars = ["AMI_TYPE=${source.name}"]
+    script           = "scripts/al2/install-kernel5dot10.sh"
   }
 
   provisioner "shell" {
