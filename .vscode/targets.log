@@ -1,0 +1,388 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Tue Nov 15 14:57:42 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/rwarren/Documents/repos/amazon-ecs-ami
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 6)
+ARCH_ALT = arm64
+# makefile (from `Makefile', line 2)
+KERNEL := darwin
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/rwarren/.pyenv/shims:/Users/rwarren/.pyenv/shims:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.S6cqLiwmNd/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 1)
+PACKER_VERSION := 1.7.4
+# environment
+PWD = /Users/rwarren/Documents/repos/amazon-ecs-ami
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PYENV_SHELL = zsh
+# environment
+HOME = /Users/rwarren
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/rwarren/Library/Application Support/Code/CachedData/6261075646f055b99068d3688932416f2346dd3b
+# environment
+LOGNAME = rwarren
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from `Makefile', line 17)
+SHELLCHECK_URL = "https://github.com/koalaman/shellcheck/releases/download/v0.7.2/shellcheck-v0.7.2.${KERNEL}.${ARCH}.tar.xz"
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = rwarren
+# makefile
+.DEFAULT_GOAL := packer
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile', line 15)
+PACKER_URL = "https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_${KERNEL}_${ARCH_ALT}.zip"
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/hp/813hpj313xn3srcyrtbg284h2s04f2/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/rwarren/Library/Application Support/Code/1.73.1-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 3)
+ARCH := arm64
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.17487096.17487103
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x59011C2:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 16)
+SHFMT_URL = "https://github.com/mvdan/sh/releases/download/v3.4.0/shfmt_v3.4.0_${KERNEL}_${ARCH_ALT}"
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 15200
+# variable set hash-table stats:
+# Load=65/1024=6%, Rehash=0, Collisions=1/95=1%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777231, inode 8423449): 29 files, no impossibilities.
+
+# 29 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+al2arm: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 54):
+	./packer build -only="amazon-ebs.al2arm" -var "region=${REGION}" .
+	
+
+shfmt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 79):
+	curl -fLSs ${SHFMT_URL} -o ./shfmt
+	chmod +x ./shfmt
+	
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: check-region init packer-fmt validate al1 al2 al2arm al2gpu al2inf al2022 al2022arm fmt static-check clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+al1: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 46):
+	./packer build -only="amazon-ebs.al1" -var "region=${REGION}" .
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-06 13:55:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+validate: check-region init
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 42):
+	./packer validate -var "region=${REGION}" .
+	
+
+packer-fmt: packer
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 38):
+	./packer fmt -check .
+	
+
+al2gpu: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 58):
+	./packer build -only="amazon-ebs.al2gpu" -var "region=${REGION}" .
+	
+
+al2inf: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 62):
+	./packer build -only="amazon-ebs.al2inf" -var "region=${REGION}" .
+	
+
+al2022arm: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 70):
+	./packer build -only="amazon-ebs.al2022arm" -var "region=${REGION}" .
+	
+
+al2: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 50):
+	./packer build -only="amazon-ebs.al2" -var "region=${REGION}" .
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+static-check: packer-fmt shfmt shellcheck
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 89):
+	REGION=us-west-2 make validate
+	./shfmt -d -s -w -i 4 ./*.sh ./*/*.sh ./*/*/*.sh
+	./shellcheck --severity=error --exclude=SC2045 ./*.sh ./*/*.sh ./*/*/*.sh
+	
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 95):
+	-rm manifest.json
+ 
+	-rm shellcheck
+	-rm shfmt
+	-rm packer
+	
+
+shellcheck:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 73):
+	curl -fLSs ${SHELLCHECK_URL} -o /tmp/shellcheck.tar.xz
+	tar -xvf /tmp/shellcheck.tar.xz -C /tmp --strip-components=1
+	mv /tmp/shellcheck ./shellcheck
+	rm /tmp/shellcheck.tar.xz
+	
+
+init: packer
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 34):
+	./packer init .
+	
+
+check-region:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 30):
+	@bash -c "if [ -z ${REGION} ]; then echo 'ERROR: REGION variable must be set. Example: \"REGION=us-west-2 make al2\"'; exit 1; fi"
+	
+
+fmt: packer shfmt
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 84):
+	./packer fmt .
+	./shfmt -l -s -w -i 4 ./*.sh ./*/*.sh ./*/*/*.sh
+	
+
+packer:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	curl -fLSs ${PACKER_URL} -o ./packer.zip
+	unzip ./packer.zip
+	rm ./packer.zip
+	
+
+al2022: check-region init validate release.auto.pkrvars.hcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 66):
+	./packer build -only="amazon-ebs.al2022" -var "region=${REGION}" .
+	
+
+release.auto.pkrvars.hcl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 25):
+	echo "Missing configuration file: release.auto.pkrvars.hcl."
+	exit 1
+	
+
+# files hash-table stats:
+# Load=23/1024=2%, Rehash=0, Collisions=0/99=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Nov 15 14:57:42 2022
+
+ 
