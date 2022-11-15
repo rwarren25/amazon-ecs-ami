@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 
-if [[ $AMI_TYPE != "al2inf" ]]; then
+if [[ $AMI_TYPE != "al2inf" && $AMI_TYPE != "al2022neu" ]]; then
     exit 0
 fi
 
@@ -29,6 +29,18 @@ sudo yum install kernel-devel-$(uname -r) kernel-headers-$(uname -r) -y
 # Install Neuron Driver
 sudo yum install -y aws-neuronx-dkms-2.*
 sudo yum install -y aws-neuronx-oci-hook-2.*
+
+# Install oci-add-hooks
+# TODO: oci-add-hooks package has compatibility issue with AL2022 IMDSv2. Remove condition after root caused and resolved
+if [[ $AMI_TYPE == "al2inf" ]]; then
+    sudo yum install -y oci-add-hooks
+fi
+
+# Install Neuron Tools
+# TODO: use aws-neuronx-tools on al2inf when it is ready
+if [[ $AMI_TYPE == "al2inf" ]]; then # drop this dependency for AL2022 or later AMIs
+    sudo yum install -y aws-neuron-tools
+fi
 
 # disable neuron package upgrades by deleting the yum repo
 sudo rm /etc/yum.repos.d/neuron.repo
