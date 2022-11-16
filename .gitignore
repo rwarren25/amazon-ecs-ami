@@ -3,7 +3,5 @@ manifest.json
 overrides.auto.pkrvars.hcl
 shfmt
 shellcheck
-.vscode/configurationCache.log
-.vscode/dryrun.log
-.vscode/settings.json
-.vscode/targets.log
+*.idea
+*.DS_Store

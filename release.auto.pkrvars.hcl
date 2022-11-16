@@ -8,4 +8,6 @@ source_ami_al2              = "CIS Amazon Linux 2 Kernel 4.14 Benchmark v2.0.0.1
 source_ami_al2arm           = "amzn2-ami-minimal-hvm-2.0.20221004.0-arm64-ebs"
 source_ami_al2022           = "al2022-ami-minimal-2022.0.20221101.0-kernel-5.15-x86_64"
 source_ami_al2022arm        = "al2022-ami-minimal-2022.0.20221101.0-kernel-5.15-arm64"
+kernel_version_al2022       = "-kernel-5.15"
+kernel_version_al2022arm    = "-kernel-5.15"
 distribution_release_al2022 = "2022.0.20221101"

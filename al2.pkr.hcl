@@ -244,6 +244,11 @@ build {
 
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
+    script = "scripts/install-service-connect-appnet.sh"
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/cleanup.sh"
   }
 
