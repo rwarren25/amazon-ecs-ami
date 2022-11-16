@@ -142,7 +142,6 @@ build {
     script = "scripts/install-docker.sh"
     environment_vars = [
       "DOCKER_VERSION=${var.docker_version}",
-      "DOCKER_COMPOSE_VERSION=${var.docker_compose_version}",
       "CONTAINERD_VERSION=${var.containerd_version}",
       "AIR_GAPPED=${var.air_gapped}"
     ]
