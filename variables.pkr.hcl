@@ -56,11 +56,6 @@ variable "docker_version" {
   description = "Docker version to build AMI with."
 }
 
-variable "docker_compose_version" {
-  type        = string
-  description = "Docker compose version to build AMI with."
-}
-
 variable "containerd_version" {
   type        = string
   description = "Containerd version to build AMI with."
