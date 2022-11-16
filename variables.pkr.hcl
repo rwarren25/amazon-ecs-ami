@@ -75,11 +75,6 @@ variable "docker_version" {
   default     = "20.10.25"
 }
 
-variable "docker_compose_version" {
-  type        = string
-  description = "Docker compose version to build AMI with."
-}
-
 variable "containerd_version" {
   type        = string
   description = "Containerd version to build AMI with."
