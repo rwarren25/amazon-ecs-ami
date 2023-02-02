@@ -1,5 +1,47 @@
 # Changelog
 
+## 20230127
+
+- ecs version: 1.68.1-1
+- distribution al2022 release: 2022.0.20230118
+
+## 20230109
+
+- ecs version: 1.68.0-1
+
+## 20221230
+
+- ecs version: 1.67.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20221209.1-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20221210.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20221210.1-arm64-ebs 
+- source al2022 ami: al2022-ami-minimal-2022.0.20221207.4-kernel-5.15-x86_64
+- source al2022 arm ami: al2022-ami-minimal-2022.0.20221207.4-kernel-5.15-arm64
+
+## 20221213
+
+- ecs version: 1.67.2-1
+
+## 20221207
+
+- ecs version: 1.67.1-1
+- source al2022 ami: al2022-ami-minimal-2022.0.20221103.1-kernel-5.15-x86_64
+- source al2022 arm ami: al2022-ami-minimal-2022.0.20221103.1-kernel-5.15-arm64
+- distribution al2022 release: 2022.0.20221207
+- feature: Add AL2 kernel 5.10 recipes for x86_64 and arm64 [#97](https://github.com/aws/amazon-ecs-ami/pull/97)
+
+## 20221118
+
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20221103.3-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20221103.3-arm64-ebs
+
+## 20221115
+
+- ecs version: 1.66.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20221018.0-x86_64-ebs
+- enhancement: Add back oci-add-hooks to neuron recipe (AL2INF only) [#90](https://github.com/aws/amazon-ecs-ami/pull/90)
+- bug fix: Reverting the change to disable userland proxy [#91](https://github.com/aws/amazon-ecs-ami/pull/91)
+
 ## 20221102
 
 - ecs version: 1.65.1-1
