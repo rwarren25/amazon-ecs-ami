@@ -3,6 +3,5 @@ make: Entering directory `/Users/rwarren/Documents/repos/amazon-ecs-ami'
 curl -fLSs "https://releases.hashicorp.com/packer/1.7.4/packer_1.7.4_darwin_arm64.zip" -o ./packer.zip
 unzip ./packer.zip
 rm ./packer.zip
- 
 make: Leaving directory `/Users/rwarren/Documents/repos/amazon-ecs-ami'
  
