@@ -22,7 +22,8 @@ source "amazon-ebs" "al2" {
     owners = ["679593333241"]
     most_recent = true
   }
-  ssh_username = "ec2-user"
+  ssh_interface = "public_ip"
+  ssh_username  = "ec2-user"
   tags = {
     os_version              = "Amazon Linux 2"
     source_image_name       = "{{ .SourceAMIName }}"
