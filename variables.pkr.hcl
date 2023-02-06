@@ -297,6 +297,36 @@ variable "ebs_csi_driver_version" {
   default     = ""
 }
 
+variable "general_purpose_instance_types" {
+  type        = list(string)
+  description = "List of available in-region instance types for general-purpose platform"
+  default     = ["c5.large"]
+}
+
+variable "gpu_instance_types" {
+  type        = list(string)
+  description = "List of available in-region instance types for GPU platform"
+  default     = ["c5.4xlarge"]
+}
+
+variable "arm_instance_types" {
+  type        = list(string)
+  description = "List of available in-region instance types for ARM platform"
+  default     = ["m6g.xlarge"]
+}
+
+variable "inf_instance_types" {
+  type        = list(string)
+  description = "List of available in-region instance types for INF platform"
+  default     = ["inf1.xlarge"]
+}
+
+variable "neu_instance_types" {
+  type        = list(string)
+  description = "List of available in-region instance types for NEU platform"
+  default     = ["trn1.2xlarge"]
+}
+
 variable "region_dns_suffix" {
   type        = string
   description = "DNS Suffix to use for in region URLs"
