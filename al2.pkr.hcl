@@ -5,7 +5,7 @@ locals {
 source "amazon-ebs" "al2" {
   ami_name        = "${local.ami_name_al2}"
   ami_description = "Latest CIS Hardened Amazon Linux 2 Benchmark - Level 1"
-  instance_type   = "c5.large"
+  instance_type   = var.general_purpose_instance_types[0]
   launch_block_device_mappings {
     volume_size           = var.block_device_size_gb
     delete_on_termination = true
