@@ -1,10 +1,18 @@
 locals {
+<<<<<<< HEAD
   ami_name_al2023 = "${var.ami_name_prefix_al2023}-hvm-2023.0.${var.ami_version_al2023}${var.kernel_version_al2023}-x86_64"
+=======
+  ami_name_al2023 = "${var.ami_name_prefix_al2023}-hvm-2023.0.${var.ami_version}${var.kernel_version_al2023}-x86_64"
+>>>>>>> 25b883d (introducing AL2023 AMIs)
 }
 
 source "amazon-ebs" "al2023" {
   ami_name        = "${local.ami_name_al2023}"
+<<<<<<< HEAD
   ami_description = "Amazon Linux AMI 2023.0.${var.ami_version_al2023} x86_64 ECS HVM EBS"
+=======
+  ami_description = "Amazon Linux AMI 2023.0.${var.ami_version} x86_64 ECS HVM EBS"
+>>>>>>> 25b883d (introducing AL2023 AMIs)
   instance_type   = var.general_purpose_instance_types[0]
   launch_block_device_mappings {
     volume_size           = var.block_device_size_gb
@@ -29,7 +37,11 @@ source "amazon-ebs" "al2023" {
     ecs_runtime_version = "Docker version ${var.docker_version_al2023}"
     ecs_agent_version   = "${var.ecs_agent_version}"
     ami_type            = "al2023"
+<<<<<<< HEAD
     ami_version         = "2023.0.${var.ami_version_al2023}"
+=======
+    ami_version         = "2023.0.${var.ami_version}"
+>>>>>>> 25b883d (introducing AL2023 AMIs)
   }
 }
 
@@ -79,8 +91,12 @@ build {
   provisioner "shell" {
     inline_shebang = "/bin/sh -ex"
     inline = [
+<<<<<<< HEAD
       "sudo dnf install -y ${local.packages_al2023}",
       "sudo dnf swap -y gnupg2-minimal gnupg2-full"
+=======
+      "sudo dnf install -y ${local.packages_al2023}"
+>>>>>>> 25b883d (introducing AL2023 AMIs)
     ]
   }
 
@@ -93,7 +109,10 @@ build {
     environment_vars = [
       "DOCKER_VERSION=${var.docker_version_al2023}",
       "CONTAINERD_VERSION=${var.containerd_version_al2023}",
+<<<<<<< HEAD
       "RUNC_VERSION=${var.runc_version_al2023}",
+=======
+>>>>>>> 25b883d (introducing AL2023 AMIs)
       "AIR_GAPPED=${var.air_gapped}"
     ]
   }
