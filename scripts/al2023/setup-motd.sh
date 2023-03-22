@@ -9,10 +9,14 @@ sudo ln -s /dev/null /etc/motd.d/30-banner
 
 # add the ECS motd banner
 <<<<<<< HEAD
+<<<<<<< HEAD
 cat <<'EOF' >>/tmp/31-banner
 =======
 echo -e "
 >>>>>>> 25b883d (introducing AL2023 AMIs)
+=======
+cat <<'EOF' >>/tmp/31-banner
+>>>>>>> 7ba9796 (fix the motd banner)
    ,     #_
    ~\_  ####_
   ~~  \_#####\
