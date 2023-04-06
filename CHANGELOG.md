@@ -1,5 +1,42 @@
 # Changelog
 
+## 20230321
+
+- ecs version: 1.70.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230322.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230320.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230320.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230320.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230320.0-arm64-ebs
+- Feature: Add AL2023 AMI
+
+## 20230314
+
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230306.1-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230307.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230307.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230307.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230307.0-arm64-ebs
+
+## 20230301
+
+- ecs version: 1.69.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230221.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230221.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230221.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230221.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230221.0-arm64-ebs
+- bug fix: Don't use spot instances to build AMIs [#106](https://github.com/aws/amazon-ecs-ami/pull/106)
+## 20230214
+
+- ecs version: 1.68.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230207.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230119.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230119.1-arm64-ebs
+- source al2022 ami: al2022-ami-minimal-2022.0.20230118.3-kernel-5.15-x86_64
+- source al2022 arm ami: al2022-ami-minimal-2022.0.20230118.3-kernel-5.15-arm64
+- Enhancement: Use `spot_instance_types` for building AMIs [#104](https://github.com/aws/amazon-ecs-ami/pull/104)
+
 ## 20230127
 
 - ecs version: 1.68.1-1

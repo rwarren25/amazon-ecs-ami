@@ -5,7 +5,7 @@ locals {
 source "amazon-ebs" "al1" {
   ami_name        = "${local.ami_name_al1}"
   ami_description = "Amazon Linux AMI amzn-ami-2018.03.${var.ami_version} x86_64 ECS HVM GP2"
-  instance_type   = "c5.large"
+  instance_type   = var.general_purpose_instance_types[0]
   launch_block_device_mappings {
     volume_size           = 8
     delete_on_termination = true
@@ -27,6 +27,7 @@ source "amazon-ebs" "al1" {
     most_recent = true
   }
   user_data_file = "scripts/al1/user_data.sh"
+  ssh_interface  = "public_ip"
   ssh_username   = "ec2-user"
   tags = {
     os_version          = "Amazon Linux"
