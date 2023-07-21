@@ -334,6 +334,12 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.1.20230719
 
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
 ## 20230705
 - ecs version: 1.73.1-1
 - source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
