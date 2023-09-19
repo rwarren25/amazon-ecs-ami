@@ -92,11 +92,16 @@ build {
     inline_shebang = "/bin/sh -ex"
     inline = [
 <<<<<<< HEAD
+<<<<<<< HEAD
       "sudo dnf install -y ${local.packages_al2023}",
       "sudo dnf swap -y gnupg2-minimal gnupg2-full"
 =======
       "sudo dnf install -y ${local.packages_al2023}"
 >>>>>>> 25b883d (introducing AL2023 AMIs)
+=======
+      "sudo dnf install -y ${local.packages_al2023}",
+      "sudo dnf swap -y gnupg2-minimal gnupg2-full"
+>>>>>>> 63daf3f (use gpg check for exec ssm agent (#146))
     ]
   }
 
