@@ -177,6 +177,11 @@ build {
     script = "scripts/install-additional-packages.sh"
   }
 
+  provisioner "file" {
+    source      = "files/amazon-ssm-agent.gpg"
+    destination = "/tmp/amazon-ssm-agent.gpg"
+  }
+
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = [
