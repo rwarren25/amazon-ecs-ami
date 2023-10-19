@@ -140,7 +140,10 @@ build {
     environment_vars = [
       "REGION=${var.region}",
       "AGENT_VERSION=${var.ecs_agent_version}",
+<<<<<<< HEAD
       "EBS_CSI_DRIVER_VERSION=${var.ebs_csi_driver_version}",
+=======
+>>>>>>> 846469b (Add install-managed-daemons.sh script to al2 and al2023)
       "AIR_GAPPED=${var.air_gapped}",
       "MANAGED_DAEMON_BASE_URL=${var.managed_daemon_base_url}"
     ]

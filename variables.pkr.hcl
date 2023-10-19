@@ -327,6 +327,12 @@ variable "neu_instance_types" {
   default     = ["inf1.xlarge"]
 }
 
+variable "managed_daemon_base_url" {
+  type        = string
+  description = "Base URL (minus file name) to download managed daemons from."
+  default     = ""
+}
+
 variable "region_dns_suffix" {
   type        = string
   description = "DNS Suffix to use for in region URLs"
