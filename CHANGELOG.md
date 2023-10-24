@@ -334,6 +334,16 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.1.20230719
 
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
 ## 20230929
 - ecs version: 1.77.0-1
 - source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
