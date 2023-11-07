@@ -93,6 +93,27 @@ variable "source_ami_al2arm" {
   description = "Amazon Linux 2 ARM source AMI to build from."
 }
 
+variable "source_ami_al2_gpu" {
+  type        = string
+  description = "Amazon Linux 2 source AMI to build AL2GPU AMI from. This is a temporary override."
+  default     = "amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs"
+}
+
+variable "source_ami_al2kernel5dot10" {
+  type        = string
+  description = "Amazon Linux 2 Kernel 5.10 source AMI to build from."
+}
+
+variable "source_ami_al2kernel5dot10arm" {
+  type        = string
+  description = "Amazon Linux 2 Kernel 5.10 ARM source AMI to build from."
+}
+
+variable "source_ami_al2023" {
+  type        = string
+  description = "Amazon Linux 2023 source AMI to build from."
+}
+
 variable "source_ami_al2023arm" {
   type        = string
   description = "Amazon Linux 2023 ARM source AMI to build from."
