@@ -433,6 +433,21 @@
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
 - Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
 
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
 ## 20231024
 - ecs version: 1.78.0-1
 - source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
