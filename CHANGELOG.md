@@ -433,12 +433,22 @@
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
 - Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
 
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
 ## 20231204
 - ecs version: 1.79.1-1
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
 - source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
 
 ## 20231114
 - ecs version: 1.79.1-1
