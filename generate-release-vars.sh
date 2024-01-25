@@ -67,6 +67,7 @@ EOF
     readonly runc_version=$(sed -n '/variable "runc_version" {/,/}/p' variables.pkr.hcl | grep "default" | awk -F '"' '{ print $2 }')
     readonly exec_ssm_version=$(sed -n '/variable "exec_ssm_version" {/,/}/p' variables.pkr.hcl | grep "default" | awk -F '"' '{ print $2 }')
 
+<<<<<<< HEAD
     cat >|release-al2.auto.pkrvars.hcl <<EOF
 ami_version_al2               = "$ami_version"
 ecs_agent_version             = "$ecs_agent_version"
@@ -75,10 +76,33 @@ docker_version                = "$docker_version"
 containerd_version            = "$containerd_version"
 runc_version                  = "$runc_version"
 exec_ssm_version              = "$exec_ssm_version"
+=======
+readonly ami_name_al2_kernel5dot10arm ami_name_al2_kernel5dot10 ami_name_al2_arm ami_name_al2_x86 ami_name_al1 ami_name_al2023_arm ami_name_al2023_x86 distribution_release_al2023
+
+cat >|release.auto.pkrvars.hcl <<EOF
+ami_version                   = "$ami_version"
+ecs_agent_version             = "$agent_version"
+ecs_init_rev                  = "$ecs_init_rev"
+docker_version                = "20.10.25"
+docker_version_al2023         = "20.10.25"
+containerd_version            = "1.6.19"
+containerd_version_al2023     = "1.6.19"
+runc_version                  = "1.1.7"
+runc_version_al2023           = "1.1.7"
+source_ami_al1                = "$ami_name_al1"
+>>>>>>> 8566a5a (Add runc_version to release variables (#193))
 source_ami_al2                = "$ami_name_al2_x86"
 source_ami_al2arm             = "$ami_name_al2_arm"
 source_ami_al2kernel5dot10    = "$ami_name_al2_kernel5dot10"
 source_ami_al2kernel5dot10arm = "$ami_name_al2_kernel5dot10arm"
+<<<<<<< HEAD
+=======
+source_ami_al2023             = "$ami_name_al2023_x86"
+source_ami_al2023arm          = "$ami_name_al2023_arm"
+kernel_version_al2023         = "$kernel_version_al2023_x86"
+kernel_version_al2023arm      = "$kernel_version_al2023_arm"
+distribution_release_al2023   = "$distribution_release_al2023"
+>>>>>>> 8566a5a (Add runc_version to release variables (#193))
 EOF
     ;;
 "al2023")
