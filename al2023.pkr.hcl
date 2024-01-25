@@ -115,9 +115,13 @@ build {
       "DOCKER_VERSION=${var.docker_version_al2023}",
       "CONTAINERD_VERSION=${var.containerd_version_al2023}",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "RUNC_VERSION=${var.runc_version_al2023}",
 =======
 >>>>>>> 25b883d (introducing AL2023 AMIs)
+=======
+      "RUNC_VERSION=${var.runc_version_al2023}",
+>>>>>>> e38f5f1 (Add runc_version to release variables (#193))
       "AIR_GAPPED=${var.air_gapped}"
     ]
   }
