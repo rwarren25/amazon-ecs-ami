@@ -77,6 +77,11 @@ variable "containerd_version_al2023" {
   description = "Containerd version to build AL2023 AMI with."
 }
 
+variable "runc_version_al2023" {
+  type        = string
+  description = "Runc version to build AL2023 AMI with."
+}
+
 variable "exec_ssm_version" {
   type        = string
   default     = "3.2.2303.0"
