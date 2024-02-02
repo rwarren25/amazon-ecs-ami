@@ -433,6 +433,20 @@
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
 - Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
 
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
 ## 20240131
 - ecs version: 1.80.0-1
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
