@@ -55,7 +55,7 @@ al1: check-region init validate release-al1.auto.pkrvars.hcl
 
 .PHONY: al2
 al2: check-region init validate release-al2.auto.pkrvars.hcl
-	packer build -only="amazon-ebs.al2" -var "region=${REGION}" .
+	./packer build -only="amazon-ebs.al2" -var "region=${REGION}" .
 
 .PHONY: al2arm
 al2arm: check-region init validate release-al2.auto.pkrvars.hcl
