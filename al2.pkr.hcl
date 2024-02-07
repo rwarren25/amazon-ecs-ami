@@ -156,7 +156,8 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "sudo mv /tmp/amzn2-extras.repo /etc/yum.repos.d/amzn2-extras.repo"
+      "sudo mv /tmp/amzn2-extras.repo /etc/yum.repos.d/amzn2-extras.repo",
+      "sudo chown root:root /etc/yum.repos.d/amzn2-extras.repo"
     ]
   }
 
