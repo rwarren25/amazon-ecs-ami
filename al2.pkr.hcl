@@ -31,6 +31,7 @@ source "amazon-ebs" "al2" {
     ecs_runtime_version     = "Docker version ${var.docker_version}"
     ecs_agent_version       = "${var.ecs_agent_version}"
     ami_type                = "al2"
+    ami_version             = "2.0.${var.ami_version_al2}"
   }
   profile         = var.profile
   vpc_id          = var.vpc_id
