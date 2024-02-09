@@ -40,11 +40,7 @@ case "$ami_type" in
     readonly exec_ssm_version=$(sed -n '/variable "exec_ssm_version" {/,/}/p' variables.pkr.hcl | grep "default" | awk -F '"' '{ print $2 }')
 
     cat >|release-al1.auto.pkrvars.hcl <<EOF
-<<<<<<< HEAD
 ami_version_al1    = "$ami_version"
-=======
-ami_version        = "$ami_version"
->>>>>>> 7894cbe (Enable ECS-Optimized AMIs enhanced release process (#197))
 ecs_version_al1    = "$ecs_version_al1"
 docker_version_al1 = "$docker_version_al1"
 exec_ssm_version   = "$exec_ssm_version"
