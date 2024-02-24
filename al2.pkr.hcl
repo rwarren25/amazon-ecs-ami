@@ -310,7 +310,7 @@ build {
   provisioner "shell" {
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "sudo yum update -y --security --sec-severity=critical --exclude=nvidia*,docker*,cuda*,containerd*"
+      "sudo yum update -y --security --sec-severity=critical --exclude=nvidia*,docker*,cuda*,containerd*,runc*"
     ]
   }
 
