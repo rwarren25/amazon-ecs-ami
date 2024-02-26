@@ -277,7 +277,8 @@ build {
 
   provisioner "shell" {
     environment_vars = ["AMI_TYPE=${source.name}"]
-    script           = "scripts/al2/install-kernel5dot10.sh"
+    pause_before     = "10s" # pause for starting the reboot
+    script           = "scripts/enable-ecs-agent-inferentia-support.sh"
   }
 
   provisioner "shell" {
