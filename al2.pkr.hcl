@@ -128,6 +128,10 @@ build {
   }
 
   provisioner "shell" {
+    script = "scripts/setup-ecs-config-dir.sh"
+  }
+
+  provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/setup-ecs-config-dir.sh"
   }
