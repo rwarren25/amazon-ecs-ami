@@ -129,6 +129,11 @@ build {
 
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
+    script = "scripts/setup-ecs-config-dir.sh"
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo yum install iptables-services -y",
