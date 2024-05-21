@@ -4827,6 +4827,4438 @@
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
 - Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
 
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
+## 20240221
+- ecs version: 1.81.1-1
+- contaienrd version: 1.7.11
+- containerd version al2023: 1.7.11
+- al2 ami version: 20240221
+- al2023 ami version: 20240221
+- enhancement: Update generate release notes script to factor in decoupled ami_version across ami families [#205](https://github.com/aws/amazon-ecs-ami/pull/205)
+
+## 20240212
+- al1 ami version: 20240201
+- al2 ami version: 20240207
+- al2023 ami version: 20240207
+- source al2023 ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240205.2-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240205
+- enhancement: ECS-Optimized AMIs release enhancements [#197](https://github.com/aws/amazon-ecs-ami/pull/197), [#199](https://github.com/aws/amazon-ecs-ami/pull/199), [#200](https://github.com/aws/amazon-ecs-ami/pull/200), [#201](https://github.com/aws/amazon-ecs-ami/pull/201), [#202](https://github.com/aws/amazon-ecs-ami/pull/202)
+- enhancement: change amzn2-extras.repo file owner to root [#198](https://github.com/aws/amazon-ecs-ami/pull/198)
+
+## 20240201
+- ecs version: 1.81.0-1
+- containerd version: 1.7.2
+- containerd version al2023: 1.7.2
+- runc version: 1.1.11
+- runc version al2023: 1.1.11
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240131.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240131.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240131.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240131
+
+## 20240131
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240124.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240124.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240122.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240122
+- enhancement: Bump packer amazon plugin to source deprecated amis for al1 build.[#192](https://github.com/aws/amazon-ecs-ami/pull/192)
+- enhancement: Add runc to versioned parameters for installation.[#193](https://github.com/aws/amazon-ecs-ami/pull/193)
+- bug fix: Fix al2gpu AMI package installs and updates when running in isolated subnets. [#191](https://github.com/aws/amazon-ecs-ami/pull/191)
+
+## 20240109
+- ecs version: 1.80.0-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240109.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240109.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20240108.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20240108
+
+## 20231219
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231218.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231218.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231218.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.3.20231218.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.3.20231218
+
+## 20231213
+- ecs version: 1.79.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231206.1-x86_64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+
+## 20231211
+- ecs version: 1.79.2-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231206.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231206.0-arm64-ebs
+- Enhancement: Add open source nvidia kernel module .tar file and install script. [#163](https://github.com/aws/amazon-ecs-ami/pull/163)
+
+## 20231204
+- ecs version: 1.79.1-1
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231116.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231116.0-arm64-ebs
+- Enhancement: skip shredding files since we're deleting the entire directory [#168](https://github.com/aws/amazon-ecs-ami/pull/168)
+- Enhancement: Make EBS CSI driver version overridable [#172](https://github.com/aws/amazon-ecs-ami/pull/172)
+
+## 20231114
+- ecs version: 1.79.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231106.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231113.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231113
+
+## 20231103
+- ecs version: 1.79.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231024.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20231101.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20231101.0-arm64-ebs
+- source al2 gpu ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20231030.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20231030
+- Feature: Add support for EBS tasks to the ECS-Optimized AMI [#154](https://github.com/aws/amazon-ecs-ami/pull/154)
+- Enhancement: Update docker version to 20.10.25 in the script [#157](https://github.com/aws/amazon-ecs-ami/pull/157)
+- Enhancement: Temporarily override GPU base AMI [#161](https://github.com/aws/amazon-ecs-ami/pull/161)
+
+## 20231024
+- ecs version: 1.78.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20231002.0-x86_64-ebs
+- docker version: 20.10.25
+- docker version al2023: 20.10.25
+- enhancement: Install aws-neuronx-tools in AL2INF and AL2023NEU [#149](https://github.com/aws/amazon-ecs-ami/pull/149)
+- enhancement: Update SSM Agent version to 3.2.1630.0 for ECS exec [#150](https://github.com/aws/amazon-ecs-ami/pull/150)
+- bug fix: Fix a typo in the enable inf support script [#152](https://github.com/aws/amazon-ecs-ami/pull/152)
+- bug fix: add al2keplergpu build recipe to build gpu amis for kepler arch [#153](https://github.com/aws/amazon-ecs-ami/pull/153)
+
+## 20230929
+- ecs version: 1.77.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230918.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230926.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230926.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.2.20230920.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.2.20230920
+- Enhancement: Enable NVIDIA Persistence Daemon by default [#147](https://github.com/aws/amazon-ecs-ami/pull/147)
+- Enhancement: Use gpg check to validate exec ssm agent [#146](https://github.com/aws/amazon-ecs-ami/pull/146)
+
+## 20230912
+- ecs version: 1.76.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230905.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230906.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230906.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230912.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230912
+
+## 20230906
+- ecs version: 1.75.3-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230821.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-eb
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230822.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230822.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230825.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230825
+- enhancement: Update execute-command-agent to 3.2.1478.0. [#141](https://github.com/aws/amazon-ecs-ami/pull/141)
+
+## 20230809
+- ecs version: 1.75.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230807.0-x86_64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230809.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230809
+
+## 20230731
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230724.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230727.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230727.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230725.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230725
+
+## 20230720
+- ecs version: 1.74.1-1
+- source al2023 ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230719.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230719
+
+## 20230705
+- ecs version: 1.73.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230628.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230628.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230628.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.1.20230705.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.1.20230705
+
+## 20230627
+- ecs version: 1.73.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230607.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230612.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230612.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230614.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230614
+- Enhancement: Add a script to generate release notes [#132](https://github.com/aws/amazon-ecs-ami/pull/132)
+
+## 20230606
+- ecs version: 1.72.0-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230601.0-x86_64-ebs
+- source ami al2: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2kernel5dot10: amzn2-ami-minimal-hvm-2.0.20230530.0-x86_64-ebs
+- source ami al2kernel5dot10arm: amzn2-ami-minimal-hvm-2.0.20230530.0-arm64-ebs
+- source ami al2023: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-x86_64
+- source ami al2023arm: al2023-ami-minimal-2023.0.20230607.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230607
+- docker version: 20.10.23
+- docker version al2023: 20.10.23
+- containerd version: 1.6.19
+- containerd version al2023: 1.6.19
+- Enhancement: moved AL2023 docker and containerd version declaration to generate-release-var.sh
+
+## 20230530
+
+- ecs version: 1.71.2-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230515.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230515.0-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230515.0-arm64-ebs
+- source al2023 ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.0.20230517.1-kernel-6.1-arm64
+- distribution al2023 release: 2023.0.20230517
+
+## 20230509
+
+- ecs version: 1.71.1-1
+- source al1 ami: amzn-ami-minimal-hvm-2018.03.0.20230501.0-x86_64-ebs
+- source al2 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20230504.1-x86_64-ebs
+- source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20230504.1-arm64-ebs
+- Fix: Change docker version and containerd version in release config generation script [#126](https://github.com/aws/amazon-ecs-ami/pull/126)
+
 ## 20230428
 - ecs version: [1.71.0-1](https://github.com/aws/amazon-ecs-agent/releases/tag/v1.71.0)
 - al2 docker version: 20.10.22
