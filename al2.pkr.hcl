@@ -136,8 +136,6 @@ build {
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo yum install iptables-services -y",
-      "systemctl enable iptables",
-      "systemctl start iptables",
       "sudo iptables -A INPUT -i docker0 -d 127.0.0.0/8 -p tcp -m tcp --dport 51679 -j ACCEPT",
       "sudo service iptables save"
     ]
