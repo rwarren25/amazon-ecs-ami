@@ -1,5 +1,11 @@
 locals {
   ami_name_al2 = "hardened-ecs-container-instance-unverified-al2-image-${formatdate("YYYY-MM-DD", timestamp())}"
+  motd_files = [
+    "29-ecs-banner-begin",
+    "31-ecs-banner-finish",
+    "69-available-updates-begin",
+    "71-available-updates-finish"
+  ]
 }
 
 source "amazon-ebs" "al2" {
@@ -65,32 +71,26 @@ build {
     ]
   }
 
-  provisioner "file" {
-    source      = "files/29-ecs-banner-begin.sh.amzn2"
-    destination = "/tmp/29-ecs-banner-begin"
+  dynamic "provisioner" {
+    for_each = local.motd_files
+    labels   = ["file"]
+    content {
+      source      = "files/${provisioner.value}.sh.amzn2"
+      destination = "/tmp/${provisioner.value}"
+    }
   }
 
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
-    inline_shebang = "/bin/sh -ex"
-    inline = [
-      "sudo mv /tmp/29-ecs-banner-begin /etc/update-motd.d/29-ecs-banner-begin",
-      "sudo chmod 755 /etc/update-motd.d/29-ecs-banner-begin"
-    ]
-  }
-
-  provisioner "file" {
-    source      = "files/31-ecs-banner-finish.sh.amzn2"
-    destination = "/tmp/31-ecs-banner-finish"
-  }
-
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
-    inline_shebang = "/bin/sh -ex"
-    inline = [
-      "sudo mv /tmp/31-ecs-banner-finish /etc/update-motd.d/31-ecs-banner-finish",
-      "sudo chmod 755 /etc/update-motd.d/31-ecs-banner-finish"
-    ]
+  dynamic "provisioner" {
+    for_each = local.motd_files
+    labels   = ["shell"]
+    content {
+      execute_command = "{{.Vars}} bash '{{.Path}}'"
+      inline_shebang = "/bin/sh -ex"
+      inline = [
+        "sudo mv /tmp/${provisioner.value} /etc/update-motd.d/${provisioner.value}",
+        "sudo chmod 755 /etc/update-motd.d/${provisioner.value}"
+      ]
+    }
   }
 
   provisioner "shell" {
