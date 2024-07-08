@@ -127,14 +127,6 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "sudo yum update -y"
-    ]
-  }
-
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
-    inline_shebang = "/bin/sh -ex"
-    inline = [
       "sudo yum install iptables-services -y",
       "sudo iptables -A INPUT -i docker0 -d 127.0.0.0/8 -p tcp -m tcp --dport 51679 -j ACCEPT",
       "sudo service iptables save"
@@ -264,6 +256,14 @@ build {
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-service-connect-appnet.sh"
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    inline_shebang = "/bin/sh -ex"
+    inline = [
+      "sudo yum update -y --security --sec-severity=critical --exclude=nvidia*,docker*,cuda*,containerd*,runc*"
+    ]
   }
 
   provisioner "shell" {
