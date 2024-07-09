@@ -50,7 +50,7 @@ EOF
 "al2")
     # AL2
     ami_id_al2_x86=$(aws ssm get-parameters --region "$region" --names /aws/service/ami-amazon-linux-latest/amzn2-ami-minimal-hvm-x86_64-ebs --query 'Parameters[0].[Value]' --output text)
-    ami_name_al2_x86=$(aws ec2 describe-images --region "$region" --owner amazon --image-id "$ami_id_al2_x86" --query 'Images[0].Name' --output text)
+    ami_name_al2_x86=$(aws ec2 describe-images --region "$region" --owner "679593333241" --filters "Name=name,Values=CIS Amazon Linux 2 Kernel 4.14*Level 1*" "Name=architecture,Values=x86_64" --query "sort_by(Images, &CreationDate)[-1:].[Name]" --output text)
     ami_id_al2_arm=$(aws ssm get-parameters --region "$region" --names /aws/service/ami-amazon-linux-latest/amzn2-ami-minimal-hvm-arm64-ebs --query 'Parameters[0].[Value]' --output text)
     ami_name_al2_arm=$(aws ec2 describe-images --region "$region" --owner amazon --image-id "$ami_id_al2_arm" --query 'Images[0].Name' --output text)
     ami_id_al2_kernel5dot10=$(aws ssm get-parameters --region "$region" --names /aws/service/ami-amazon-linux-latest/amzn2-ami-minimal-hvm-x86_64-ebs --query 'Parameters[0].[Value]' --output text)
