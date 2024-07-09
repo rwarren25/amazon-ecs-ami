@@ -85,7 +85,6 @@ variable "runc_version" {
   type        = string
   description = "Runc version to build AMI with."
   default     = "1.1.11"
-  default     = "1.1.11"
 }
 
 variable "docker_version_al2023" {
