@@ -61,6 +61,12 @@ variable "containerd_version" {
   description = "Containerd version to build AMI with."
 }
 
+variable "runc_version" {
+  type        = string
+  description = "Runc version to build AMI with."
+  default     = "1.1.11"
+}
+
 variable "docker_version_al2023" {
   type        = string
   description = "Docker version to build AL2023 AMI with."
@@ -73,7 +79,7 @@ variable "containerd_version_al2023" {
 
 variable "exec_ssm_version" {
   type        = string
-  default     = "3.1.1732.0"
+  default     = "3.2.2303.0"
   description = "SSM binary version to build ECS exec support with."
 }
 
