@@ -7,6 +7,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -465,6 +466,8 @@
 - distribution al2023 release: 2023.5.20240722
 - enhancement: Add oci-add-hooks package to the ECS AL2023 Neuron AMI [#274](https://github.com/aws/amazon-ecs-ami/pull/274)
 
+=======
+>>>>>>> e686218 (Release 20240712 (#273))
 ## 20240712
 - ecs version: 1.85.1
 - al2 ami version: 20240712
@@ -478,8 +481,11 @@
 - distribution al2023 release: 2023.5.20240708
 - enhancement: Update ECS Agent version to 1.85.1 [#272](https://github.com/aws/amazon-ecs-ami/pull/272)
 
+<<<<<<< HEAD
 =======
 >>>>>>> e544676 (Release 20240709 (#269))
+=======
+>>>>>>> e686218 (Release 20240712 (#273))
 ## 20240709
 - al2 ami version: 20240709
 - al2023 ami version: 20240709
