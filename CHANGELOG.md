@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -453,6 +454,11 @@
 
 =======
 >>>>>>> c9b2d1a (Update CHANGELOG 20240725)
+=======
+## 20240730
+- ecs version: 1.85.3
+
+>>>>>>> e7a9a27 (Update CHANGELOG 20240730)
 ## 20240725
 - al2 ami version: 20240725
 - al2023 ami version: 20240725
