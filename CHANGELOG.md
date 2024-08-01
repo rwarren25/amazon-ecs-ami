@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -448,6 +449,10 @@
 - distribution al2023 release: 2023.5.20240730
 - pinned docker version: 25.0.6
 
+=======
+## 20240801
+- distribution al2023 release: 2023.5.20240805
+>>>>>>> 5c832e4 (Update CHANGELOG 20240801)
 
 ## 20240730
 - ecs version: 1.85.3
