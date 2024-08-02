@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -441,6 +442,8 @@
 - distribution al2023 release: 2023.5.20240805
 - enhancement: Bump pinned containerd for AL2023 to 1.7.20 [#289](https://github.com/aws/amazon-ecs-ami/pull/289)
 
+=======
+>>>>>>> d289dbc (Update changelog 20240802)
 ## 20240802
 - al2 ami version: 20240802
 - al2023 ami version: 20240802
@@ -449,10 +452,13 @@
 - distribution al2023 release: 2023.5.20240730
 - pinned docker version: 25.0.6
 
+<<<<<<< HEAD
 =======
 ## 20240801
 - distribution al2023 release: 2023.5.20240805
 >>>>>>> 5c832e4 (Update CHANGELOG 20240801)
+=======
+>>>>>>> d289dbc (Update changelog 20240802)
 
 ## 20240730
 - ecs version: 1.85.3
