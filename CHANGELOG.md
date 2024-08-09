@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -438,6 +439,11 @@
 
 =======
 >>>>>>> 1c3ff43 (Update CHANGELOG 20240807)
+=======
+## 20240809
+- ecs version: 1.86.0
+
+>>>>>>> a014af3 (Update CHANGELOG 20240809)
 ## 20240807
 - al2023 ami version: 20240807
 - source al2023 ami: al2023-ami-minimal-2023.5.20240805.0-kernel-6.1-x86_64
