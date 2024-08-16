@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -430,12 +431,20 @@
 
 =======
 >>>>>>> 746f6db (Update CHANGELOG 20240815)
+=======
+## 20240816
+- ecs version: 1.86.1
+- al2 ami version: 20240816
+- al2023 ami version: 20240816
+
+>>>>>>> 892afe8 (Update CHANGELOG 20240816)
 ## 20240815
 - al2 ami version: 20240815
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20240809.0-x86_64-ebs
 - source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240809.0-arm64-ebs
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240809.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240809.0-arm64-ebs
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -444,6 +453,8 @@
 ## 20240814
 - al2 ami version: 20240814
 >>>>>>> 740a836 (Release 20240814 (#294))
+=======
+>>>>>>> 892afe8 (Update CHANGELOG 20240816)
 - enhancement: Bump AL2 containerd to 1.7.20 [#293](https://github.com/aws/amazon-ecs-ami/pull/293)
 
 ## 20240809
