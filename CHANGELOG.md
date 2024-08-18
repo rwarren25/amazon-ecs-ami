@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -424,10 +425,13 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.5.20240819.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.5.20240819
 
+=======
+>>>>>>> 3d2226f (Update CHANGELOG 20240818)
 ## 20240818
 - ecs version: 1.86.2
 - al2 ami version: 20240818
 - al2023 ami version: 20240818
+<<<<<<< HEAD
 
 =======
 >>>>>>> 746f6db (Update CHANGELOG 20240815)
@@ -436,6 +440,8 @@
 - ecs version: 1.86.1
 - al2 ami version: 20240816
 - al2023 ami version: 20240816
+=======
+>>>>>>> 3d2226f (Update CHANGELOG 20240818)
 
 >>>>>>> 892afe8 (Update CHANGELOG 20240816)
 ## 20240815
