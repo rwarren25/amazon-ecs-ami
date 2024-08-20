@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -419,14 +420,19 @@
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240816.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240816.0-arm64-ebs
 
+=======
+>>>>>>> 9f4bd94 (Update CHANGELOG 20240820)
 ## 20240820
 - al2023 ami version: 20240820
 - source al2023 ami: al2023-ami-minimal-2023.5.20240819.0-kernel-6.1-x86_64
 - source al2023 arm ami: al2023-ami-minimal-2023.5.20240819.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.5.20240819
 
+<<<<<<< HEAD
 =======
 >>>>>>> 3d2226f (Update CHANGELOG 20240818)
+=======
+>>>>>>> 9f4bd94 (Update CHANGELOG 20240820)
 ## 20240818
 - ecs version: 1.86.2
 - al2 ami version: 20240818
