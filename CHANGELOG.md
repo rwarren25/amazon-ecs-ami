@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -402,6 +403,8 @@
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240903.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240903.0-arm64-ebs
 
+=======
+>>>>>>> c6fae12 (Update CHANGELOG 20240905)
 ## 20240905
 - al2 ami version: 20240905
 - al2023 ami version: 20240905
@@ -410,8 +413,11 @@
 - distribution al2023 release: 2023.5.20240903
 - enhancement: Bump AL2 and AL2023 runc to 1.1.13 [#308](https://github.com/aws/amazon-ecs-ami/pull/308)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 12f9067 (Update CHANGELOG 20240903)
+=======
+>>>>>>> c6fae12 (Update CHANGELOG 20240905)
 ## 20240903
 - ecs version: 1.86.3
 - al2 ami version: 20240903
