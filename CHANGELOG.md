@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -391,11 +392,18 @@
 ## 20240919
 - al2 ami version: 20240919
 >>>>>>> 70223b3 (Update CHANGELOG 20240919)
+=======
+## 20240920
+- al2 ami version: 20240920
+>>>>>>> ee9a1d7 (Release 20240920)
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20240916.0-x86_64-ebs
 - source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20240916.0-arm64-ebs
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20240916.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20240916.0-arm64-ebs
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ee9a1d7 (Release 20240920)
 - bug fix: pin the aws-neuronx-dkms package version to 2.17.17.0 only for al2inf [#315](https://github.com/aws/amazon-ecs-ami/pull/315)
 
 =======
