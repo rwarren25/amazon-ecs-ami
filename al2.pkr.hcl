@@ -28,6 +28,9 @@ source "amazon-ebs" "al2" {
     owners = ["679593333241"]
     most_recent = true
   }
+  ami_ou_arns   = "${var.ami_ou_arns}"
+  ami_org_arns  = "${var.ami_org_arns}"
+  ami_users     = "${var.ami_users}"
   ssh_interface = "public_dns"
   ssh_username  = "ec2-user"
   tags = {
