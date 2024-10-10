@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -363,14 +364,19 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.6.20241010.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.6.20241010
 
+=======
+>>>>>>> ba7dcf3 (Update CHANGELOG 20241010)
 ## 20241010
 - al1 ami version: 20241010
 - al2 ami version: 20241010
 - al2023 ami version: 20241010
 - enhancement: Update exec SSM Agent version to 3.3.859.0
 
+<<<<<<< HEAD
 =======
 >>>>>>> 5476886 (Update CHANGELOG 20241003)
+=======
+>>>>>>> ba7dcf3 (Update CHANGELOG 20241010)
 ## 20241003
 - al2 ami version: 20241003
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20241001.0-x86_64-ebs
