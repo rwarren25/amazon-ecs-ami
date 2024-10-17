@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -350,6 +351,8 @@
 - al2 ami version: 20241023
 - enhancement: gpu AMI package update [#328](https://github.com/aws/amazon-ecs-ami/pull/328)
 
+=======
+>>>>>>> e6d0870 (Update CHANGELOG 20241017)
 ## 20241017
 - ecs version: 1.87.1
 - al2 ami version: 20241017
@@ -359,8 +362,11 @@
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20241014.0-arm64-ebs
 - al2023 ami version: 20241017
 
+<<<<<<< HEAD
 =======
 >>>>>>> b38aa90 (Update CHANGELOG 20241015)
+=======
+>>>>>>> e6d0870 (Update CHANGELOG 20241017)
 ## 20241015
 - al2023 ami version: 20241015
 - source al2023 ami: al2023-ami-minimal-2023.6.20241010.0-kernel-6.1-x86_64
