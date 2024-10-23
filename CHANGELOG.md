@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -347,12 +348,17 @@
 - al2023 ami version: 20241031
 - distribution al2023 release: 2023.6.20241028
 
+=======
+>>>>>>> 7544170 (Release 20241023)
 ## 20241023
 - al2 ami version: 20241023
 - enhancement: gpu AMI package update [#328](https://github.com/aws/amazon-ecs-ami/pull/328)
 
+<<<<<<< HEAD
 =======
 >>>>>>> e6d0870 (Update CHANGELOG 20241017)
+=======
+>>>>>>> 7544170 (Release 20241023)
 ## 20241017
 - ecs version: 1.87.1
 - al2 ami version: 20241017
