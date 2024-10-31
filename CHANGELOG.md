@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -344,12 +345,17 @@
 - distribution al2023 release: 2023.6.20241031
 - feature: Integrate with Fault Injection Service [#330](https://github.com/aws/amazon-ecs-ami/pull/330)
 
+=======
+>>>>>>> 3123e48 (Update CHANGELOG 20241031)
 ## 20241031
 - al2023 ami version: 20241031
 - distribution al2023 release: 2023.6.20241028
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7544170 (Release 20241023)
+=======
+>>>>>>> 3123e48 (Update CHANGELOG 20241031)
 ## 20241023
 - al2 ami version: 20241023
 - enhancement: gpu AMI package update [#328](https://github.com/aws/amazon-ecs-ami/pull/328)
