@@ -34,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -332,6 +333,8 @@
 - distribution al2023 release: 2023.6.20241111
 - enhancement: Bump AL2 and AL2023 runc to 1.1.14 [#341](https://github.com/aws/amazon-ecs-ami/pull/341)
 
+=======
+>>>>>>> c6a349f (Update CHANGELOG 20241108)
 ## 20241108
 - ecs version: 1.88.0
 - al2 ami version: 20241108
@@ -345,8 +348,11 @@
 - distribution al2023 release: 2023.6.20241031
 - feature: Integrate with Fault Injection Service [#330](https://github.com/aws/amazon-ecs-ami/pull/330)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 3123e48 (Update CHANGELOG 20241031)
+=======
+>>>>>>> c6a349f (Update CHANGELOG 20241108)
 ## 20241031
 - al2023 ami version: 20241031
 - distribution al2023 release: 2023.6.20241028
