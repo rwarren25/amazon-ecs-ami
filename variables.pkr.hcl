@@ -380,3 +380,15 @@ variable "region_dns_suffix" {
   description = "DNS Suffix to use for in region URLs"
   default     = ""
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "Tags to apply to the built AMI."
+  default     = {}
+}
+
+variable "run_tags" {
+  type        = map(string)
+  description = "Tags to apply to resources (key-pair, SG, IAM, snapshot, interfaces and instance) used when building the AMI."
+  default     = {}
+}
