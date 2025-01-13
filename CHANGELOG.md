@@ -41,6 +41,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -288,6 +289,8 @@
 - al2 ami version: 20250115
 - enhancement: Support existing ECS Exec feature in air-gapped regions
 
+=======
+>>>>>>> cb9e8f9 (Update CHANGELOG 20250113)
 ## 20250113
 - al2 ami version: 20250113
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250108.0-x86_64-ebs
@@ -295,8 +298,11 @@
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20250108.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20250108.0-arm64-ebs
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e84424 (Update CHANGELOG 20250110)
+=======
+>>>>>>> cb9e8f9 (Update CHANGELOG 20250113)
 ## 20250110
 - al2023 ami version: 20250110
 - source al2023 ami: al2023-ami-minimal-2023.6.20250107.0-kernel-6.1-x86_64
