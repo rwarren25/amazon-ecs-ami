@@ -43,6 +43,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -275,6 +276,8 @@
 ## 20250121
 - ecs version: 1.89.3
 
+=======
+>>>>>>> 4b93e8a (Update CHANGELOG 20250117)
 ## 20250117
 - al2 ami version: 20250117
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250116.0-x86_64-ebs
@@ -286,8 +289,11 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.6.20250115.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.6.20250115
 
+<<<<<<< HEAD
 =======
 >>>>>>> b6d61ea (Update CHANGELOG 20250115)
+=======
+>>>>>>> 4b93e8a (Update CHANGELOG 20250117)
 ## 20250115
 - al2 ami version: 20250115
 - enhancement: Support existing ECS Exec feature in air-gapped regions
