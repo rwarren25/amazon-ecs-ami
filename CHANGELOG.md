@@ -44,6 +44,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -278,6 +279,11 @@
 
 =======
 >>>>>>> 4b93e8a (Update CHANGELOG 20250117)
+=======
+## 20250121
+- ecs version: 1.89.3
+
+>>>>>>> 15999a7 (Update CHANGELOG 20250121)
 ## 20250117
 - al2 ami version: 20250117
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250116.0-x86_64-ebs
