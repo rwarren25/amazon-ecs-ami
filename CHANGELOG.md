@@ -45,6 +45,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -262,6 +263,8 @@
 - enhancement: Update ECS Agent version to 1.90.0 [#382](https://github.com/aws/amazon-ecs-ami/pull/382)
 - enhancement: Bump containerd to 1.7.25 [#384](https://github.com/aws/amazon-ecs-ami/pull/384)
 
+=======
+>>>>>>> de1559f (Update CHANGELOG 20250129)
 ## 20250129
 - al2 ami version: 20250129
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250123.4-x86_64-ebs
