@@ -46,6 +46,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -249,6 +250,8 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.6.20250211.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.6.20250211
 
+=======
+>>>>>>> 60c8dc7 (Update CHANGELOG 20250206)
 ## 20250206
 - al2 ami version: 20250206
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250201.0-x86_64-ebs
@@ -263,8 +266,11 @@
 - enhancement: Update ECS Agent version to 1.90.0 [#382](https://github.com/aws/amazon-ecs-ami/pull/382)
 - enhancement: Bump containerd to 1.7.25 [#384](https://github.com/aws/amazon-ecs-ami/pull/384)
 
+<<<<<<< HEAD
 =======
 >>>>>>> de1559f (Update CHANGELOG 20250129)
+=======
+>>>>>>> 60c8dc7 (Update CHANGELOG 20250206)
 ## 20250129
 - al2 ami version: 20250129
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250123.4-x86_64-ebs
