@@ -48,6 +48,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -236,6 +237,8 @@
 - source al2 kernel 5.10 ami: amzn2-ami-minimal-hvm-2.0.20250220.0-x86_64-ebs
 - source al2 kernel 5.10 arm ami: amzn2-ami-minimal-hvm-2.0.20250201.0-arm64-ebs
 
+=======
+>>>>>>> bacb6bf (Update CHANGELOG 20250224)
 ## 20250224
 - al1 ami version: 20250224
 - al2 ami version: 20250224
@@ -245,8 +248,11 @@
 - distribution al2023 release: 2023.6.20250218
 - enhancement: Update amazon-ssm-agent version for exec to 3.3.1802.0 [#391](https://github.com/aws/amazon-ecs-ami/pull/391)
 
+<<<<<<< HEAD
 =======
 >>>>>>> a08af91 (Update CHANGELOG 20250214)
+=======
+>>>>>>> bacb6bf (Update CHANGELOG 20250224)
 ## 20250214
 - al2023 ami version: 20250214
 - source al2023 ami: al2023-ami-minimal-2023.6.20250211.0-kernel-6.1-x86_64
