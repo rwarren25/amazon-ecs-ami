@@ -286,3 +286,9 @@ variable "ebs_csi_driver_version" {
   description = "EBS CSI driver version to build AMI with."
   default     = ""
 }
+
+variable "region_dns_suffix" {
+  type        = string
+  description = "DNS Suffix to use for in region URLs"
+  default     = ""
+}
