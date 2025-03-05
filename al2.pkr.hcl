@@ -200,11 +200,6 @@ build {
     script = "scripts/install-additional-packages.sh"
   }
 
-  provisioner "file" {
-    source      = "files/amazon-ssm-agent.gpg"
-    destination = "/tmp/amazon-ssm-agent.gpg"
-  }
-
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     environment_vars = [
@@ -220,6 +215,11 @@ build {
       "sudo find /etc/rc.d -name \"S05falcon*\" -exec rm -rf {} \\;",
       "echo \"Falcon sensor settings complete\""
     ]
+  }
+
+  provisioner "file" {
+    source      = "files/amazon-ssm-agent.gpg"
+    destination = "/tmp/amazon-ssm-agent.gpg"
   }
 
   provisioner "shell" {
