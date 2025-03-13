@@ -90,7 +90,7 @@ variable "runc_version" {
 variable "runc_version" {
   type        = string
   description = "Runc version to build AMI with."
-  default     = "1.1.14"
+  default     = "1.2.4"
 }
 
 variable "runc_version" {
@@ -120,7 +120,7 @@ variable "runc_version_al2023" {
 variable "runc_version_al2023" {
   type        = string
   description = "Runc version to build AL2023 AMI with."
-  default     = "1.1.14"
+  default     = "1.2.4"
 }
 
 variable "runc_version_al2023" {
