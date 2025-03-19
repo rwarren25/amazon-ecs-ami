@@ -206,13 +206,13 @@ variable "profile" {
 variable "vpc_id" {
   type        = string
   description = "ID of VPC to deploy to"
-  default     = "vpc-0c145c21cff6bc9e6"
+  default     = "vpc-0a21b99c4a2bd5ff5"
 }
 
 variable "subnet_id" {
   type        = string
   description = "ID of subnet to deploy to"
-  default     = "subnet-0250a5568a8350cd8"
+  default     = "subnet-01ad55f1880a74111"
 }
 
 variable "cs_falcon_client_id" {
