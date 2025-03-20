@@ -17,9 +17,9 @@ SHFMT_URL="https://github.com/mvdan/sh/releases/download/v3.4.0/shfmt_v3.4.0_${K
 SHELLCHECK_URL="https://github.com/koalaman/shellcheck/releases/download/v0.7.2/shellcheck-v0.7.2.${KERNEL}.${ARCH}.tar.xz"
 
 packer:
-	curl -fLSs ${PACKER_URL} -o ./packer.zip
-	unzip ./packer.zip
-	rm ./packer.zip
+	curl -fLSs ${PACKER_URL} -o packer.zip
+	unzip packer.zip
+	rm packer.zip
 
 release-al1.auto.pkrvars.hcl:
 	echo "Missing configuration file: release-al1.auto.pkrvars.hcl."
@@ -39,15 +39,15 @@ check-region:
 
 .PHONY: init
 init: packer
-	./packer init .
+	packer init .
 
 .PHONY: packer-fmt
 packer-fmt: packer
-	./packer fmt -check .
+	packer fmt -check .
 
 .PHONY: validate
 validate: check-region init
-	./packer validate -var "region=${REGION}" .
+	packer validate -var "region=${REGION}" .
 
 .PHONY: al1
 al1: check-region init validate release-al1.auto.pkrvars.hcl
@@ -55,7 +55,7 @@ al1: check-region init validate release-al1.auto.pkrvars.hcl
 
 .PHONY: al2
 al2: check-region init validate release-al2.auto.pkrvars.hcl
-	./packer build -only="amazon-ebs.al2" -var "region=${REGION}" .
+	packer build -only="amazon-ebs.al2" -var "region=${REGION}" .
 
 .PHONY: al2arm
 al2arm: check-region init validate release-al2.auto.pkrvars.hcl
@@ -113,14 +113,14 @@ shfmt:
 
 .PHONY: fmt
 fmt: packer shfmt
-	./packer fmt .
-	./shfmt -l -s -w -i 4 ./*.sh ./*/*.sh ./*/*/*.sh
+	packer fmt .
+	shfmt -l -s -w -i 4 ./*.sh ./*/*.sh ./*/*/*.sh
 
 .PHONY: static-check
 static-check: packer-fmt shfmt shellcheck
 	REGION=us-west-2 make validate
-	./shfmt -d -s -w -i 4 ./*.sh ./*/*.sh ./*/*/*.sh
-	./shellcheck --severity=error --exclude=SC2045 ./*.sh ./*/*.sh ./*/*/*.sh
+	shfmt -d -s -w -i 4 ./*.sh ./*/*.sh ./*/*/*.sh
+	shellcheck --severity=error --exclude=SC2045 ./*.sh ./*/*.sh ./*/*/*.sh
 
 .PHONY: clean
 clean:
