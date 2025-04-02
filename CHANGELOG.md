@@ -56,6 +56,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -198,6 +199,14 @@
 
 =======
 >>>>>>> 63033af (Update CHANGELOG 20250327)
+=======
+## 20250402
+- al2023 ami version: 20250402
+- source al2023 ami: al2023-ami-minimal-2023.7.20250331.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.7.20250331.0-kernel-6.1-arm64
+- distribution al2023 release: 2023.7.20250331
+
+>>>>>>> df7e900 (Update CHANGELOG 20250402)
 ## 20250327
 - al2023 ami version: 20250327
 - al2 ami version: 20250327
