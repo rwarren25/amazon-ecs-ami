@@ -57,6 +57,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -207,6 +208,8 @@
 - distribution al2023 release: 2023.7.20250331
 
 >>>>>>> df7e900 (Update CHANGELOG 20250402)
+=======
+>>>>>>> bf0a8ec (Revert "Update CHANGELOG 20250402")
 ## 20250327
 - al2023 ami version: 20250327
 - al2 ami version: 20250327
