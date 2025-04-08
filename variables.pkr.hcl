@@ -212,7 +212,7 @@ variable "vpc_id" {
 variable "subnet_id" {
   type        = string
   description = "ID of subnet to deploy to"
-  default     = "subnet-01ad55f1880a74111"
+  default     = "subnet-00fd52dae17659894"
 }
 
 variable "cs_falcon_client_id" {
