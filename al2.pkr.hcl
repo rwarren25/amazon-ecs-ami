@@ -290,7 +290,7 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "sudo yum update -y --security --sec-severity=important --exclude=nvidia*,docker*,cuda*,containerd*,runc*"
+      "sudo yum update -y --sec-severity=critical,important,medium --exclude=nvidia*,docker*,cuda*,containerd*,runc*"
     ]
   }
 
