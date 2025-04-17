@@ -60,6 +60,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -176,14 +177,19 @@
 - al2023 ami version: 20250422
 - enhancement: Bump containerd to 1.7.27 [#427](https://github.com/aws/amazon-ecs-ami/pull/427)
 
+=======
+>>>>>>> 7f29dc6 (Update CHANGELOG 20250414)
 ## 20250417
 - al2023 ami version: 20250417
 - source al2023 ami: al2023-ami-minimal-2023.7.20250414.0-kernel-6.1-x86_64
 - source al2023 arm ami: al2023-ami-minimal-2023.7.20250414.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.7.20250414
 
+<<<<<<< HEAD
 =======
 >>>>>>> ce4c919 (Update CHANGELOG 20250408)
+=======
+>>>>>>> 7f29dc6 (Update CHANGELOG 20250414)
 ## 20250408
 - al2 ami version: 20250408
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250405.0-x86_64-ebs
