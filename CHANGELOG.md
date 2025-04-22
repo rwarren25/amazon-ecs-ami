@@ -61,6 +61,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -167,6 +168,8 @@
 - al2 ami version: 20250430
 - al2023 ami version: 20250430
 
+=======
+>>>>>>> c354241 (Update CHANGELOG 20250422)
 ## 20250422
 - ecs version: 1.92.0
 - al2 ami version: 20250422
@@ -177,8 +180,11 @@
 - al2023 ami version: 20250422
 - enhancement: Bump containerd to 1.7.27 [#427](https://github.com/aws/amazon-ecs-ami/pull/427)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7f29dc6 (Update CHANGELOG 20250414)
+=======
+>>>>>>> c354241 (Update CHANGELOG 20250422)
 ## 20250417
 - al2023 ami version: 20250417
 - source al2023 ami: al2023-ami-minimal-2023.7.20250414.0-kernel-6.1-x86_64
