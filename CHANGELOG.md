@@ -64,6 +64,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -145,6 +146,8 @@
 - al2 ami version: 20250515
 - bug fix: Pinning kernel version to 5.10.235* and downgrading agent version back to 1.93.0 [#437](https://github.com/aws/amazon-ecs-ami/pull/437)
 
+=======
+>>>>>>> a6efe17 (Update CHANGELOG 20250514)
 ## 20250514
 - ecs version: 1.93.1
 - al2 ami version: 20250514
@@ -153,8 +156,11 @@
 - source al2023 arm ami: al2023-ami-minimal-2023.7.20250512.0-kernel-6.1-arm64
 - distribution al2023 release: 2023.7.20250512
 
+<<<<<<< HEAD
 =======
 >>>>>>> 893180e (Update CHANGELOG 20250505)
+=======
+>>>>>>> a6efe17 (Update CHANGELOG 20250514)
 ## 20250505
 - al2 ami version: 20250505
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250428.0-x86_64-ebs
