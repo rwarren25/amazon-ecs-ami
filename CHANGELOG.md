@@ -65,6 +65,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -141,13 +142,18 @@
 - al2023 ami version: 20250516
 - enhancement: Add nvidia driver version checks to GH actions [#434](https://github.com/aws/amazon-ecs-ami/pull/434)
 
+=======
+>>>>>>> a493b45 (Update CHANGELOG 20250515)
 ## 20250515
 - ecs version: 1.93.0
 - al2 ami version: 20250515
 - bug fix: Pinning kernel version to 5.10.235* and downgrading agent version back to 1.93.0 [#437](https://github.com/aws/amazon-ecs-ami/pull/437)
 
+<<<<<<< HEAD
 =======
 >>>>>>> a6efe17 (Update CHANGELOG 20250514)
+=======
+>>>>>>> a493b45 (Update CHANGELOG 20250515)
 ## 20250514
 - ecs version: 1.93.1
 - al2 ami version: 20250514
