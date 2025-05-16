@@ -66,6 +66,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -132,6 +133,8 @@
 - al2 ami version: 20250523
 - al2023 ami version: 20250523
 
+=======
+>>>>>>> 24f5c85 (Update CHANGELOG 20250516)
 ## 20250516
 - ecs version: 1.93.1
 - al2 ami version: 20250516
@@ -142,8 +145,11 @@
 - al2023 ami version: 20250516
 - enhancement: Add nvidia driver version checks to GH actions [#434](https://github.com/aws/amazon-ecs-ami/pull/434)
 
+<<<<<<< HEAD
 =======
 >>>>>>> a493b45 (Update CHANGELOG 20250515)
+=======
+>>>>>>> 24f5c85 (Update CHANGELOG 20250516)
 ## 20250515
 - ecs version: 1.93.0
 - al2 ami version: 20250515
