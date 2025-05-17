@@ -212,7 +212,7 @@ build {
       "sudo $EXE -s -f --cid=$CID",
       "sudo $EXE -d -f --aid",
       "sudo $EXE -s --billing=metered",
-      "sudo find /etc/rc.d -name \"S05falcon*\" -exec rm -rf {} \\;",
+      "sudo systemctl disable --now falcon-sensor",
       "echo \"Falcon sensor settings complete\""
     ]
   }
