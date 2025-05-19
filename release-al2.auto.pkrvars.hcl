@@ -1,4 +1,4 @@
-ami_version_al2               = "20250516"
+ami_version_al2               = "20250519"
 ecs_agent_version             = "1.93.1"
 ecs_init_rev                  = "1"
 docker_version                = "25.0.8"
