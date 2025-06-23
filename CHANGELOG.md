@@ -75,6 +75,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -105,6 +106,8 @@
 - distribution al2023 release: 2023.7.20250623
 - feature: add support for P6 instances [#467](https://github.com/aws/amazon-ecs-ami/pull/467)
 
+=======
+>>>>>>> 6520689 (Update CHANGELOG 20250623)
 ## 20250623
 - al2 ami version: 20250623
 - al2023 ami version: 20250623
