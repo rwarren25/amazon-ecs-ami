@@ -76,6 +76,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -95,6 +96,9 @@
 - distribution al2023 release: 2023.8.20250707
 
 ## 20250626
+=======
+## 20250625
+>>>>>>> eb59682 (Update CHANGELOG 20250626)
 - al2 ami version: 20250626
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250623.0-x86_64-ebs
 - source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20250623.0-arm64-ebs
@@ -106,8 +110,11 @@
 - distribution al2023 release: 2023.7.20250623
 - feature: add support for P6 instances [#467](https://github.com/aws/amazon-ecs-ami/pull/467)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 6520689 (Update CHANGELOG 20250623)
+=======
+>>>>>>> eb59682 (Update CHANGELOG 20250626)
 ## 20250623
 - al2 ami version: 20250623
 - al2023 ami version: 20250623
