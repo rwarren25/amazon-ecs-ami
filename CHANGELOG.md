@@ -77,6 +77,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -99,6 +100,9 @@
 =======
 ## 20250625
 >>>>>>> eb59682 (Update CHANGELOG 20250626)
+=======
+## 20250626
+>>>>>>> 78e34e7 (Fix a typo (#472))
 - al2 ami version: 20250626
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250623.0-x86_64-ebs
 - source al2 arm ami: amzn2-ami-minimal-hvm-2.0.20250623.0-arm64-ebs
