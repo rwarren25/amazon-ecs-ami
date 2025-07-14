@@ -78,6 +78,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 20250716
 - al2 ami version: 20250716
 - al2023 ami version: 20250716
@@ -94,6 +95,10 @@
 - al2023 ami version: 20250714
 - source al2023 ami: al2023-ami-minimal-2023.8.20250707.0-kernel-6.1-x86_64
 - source al2023 arm ami: al2023-ami-minimal-2023.8.20250707.0-kernel-6.1-arm64
+=======
+## 20250711
+- al2023 ami version: 20250711
+>>>>>>> 34860c8 (Update CHANGELOG 20250711)
 - distribution al2023 release: 2023.8.20250707
 
 ## 20250626
