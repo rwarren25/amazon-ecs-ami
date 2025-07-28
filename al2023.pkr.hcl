@@ -87,7 +87,7 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "sudo dnf update -y --releasever=${var.distribution_release_al2023}"
+      "sudo dnf update -y --releasever=latest"
     ]
   }
 
