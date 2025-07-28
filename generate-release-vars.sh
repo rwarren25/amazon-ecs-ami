@@ -96,7 +96,6 @@ source_ami_al2023           = "$ami_name_al2023_x86"
 source_ami_al2023arm        = "$ami_name_al2023_arm"
 kernel_version_al2023       = "$kernel_version_al2023_x86"
 kernel_version_al2023arm    = "$kernel_version_al2023_arm"
-distribution_release_al2023 = "$distribution_release_al2023"
 EOF
     ;;
 *)
