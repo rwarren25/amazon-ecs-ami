@@ -76,6 +76,7 @@ EOF
     kernel_version_al2023_arm=$(grep -o -e "-kernel-[1-9.]*" <<<"$ami_name_al2023_arm")
 
     readonly ami_name_al2023_x86 ami_name_al2023_arm
+    readonly ami_name_al2023_x86 ami_name_al2023_arm
 
     readonly ecs_agent_version=$(sed -n '/variable "ecs_agent_version" {/,/}/p' variables.pkr.hcl | grep "default" | awk -F '"' '{ print $2 }')
     readonly ecs_init_rev=$(sed -n '/variable "ecs_init_rev" {/,/}/p' variables.pkr.hcl | grep "default" | awk -F '"' '{ print $2 }')
