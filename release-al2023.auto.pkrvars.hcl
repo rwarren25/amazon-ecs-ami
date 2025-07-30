@@ -1,5 +1,5 @@
-ami_version_al2023          = "20250725"
-ecs_agent_version           = "1.96.0"
+ami_version_al2023          = "20250730"
+ecs_agent_version           = "1.97.0"
 ecs_init_rev                = "1"
 docker_version_al2023       = "25.0.8"
 containerd_version_al2023   = "2.0.5"
@@ -9,4 +9,3 @@ source_ami_al2023           = "CIS Amazon Linux 2023 Benchmark - Level 1 - v07 -
 source_ami_al2023arm        = "al2023-ami-minimal-2023.8.20250721.2-kernel-6.1-arm64"
 kernel_version_al2023       = "-kernel-6.1"
 kernel_version_al2023arm    = "-kernel-6.1"
-distribution_release_al2023 = "2023.8.20250721"
