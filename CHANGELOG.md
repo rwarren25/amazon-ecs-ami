@@ -247,6 +247,9 @@
 ## 2025730
 - ecs version: 1.97.0
 
+## 2025730
+- ecs version: 1.97.0
+
 ## 20250725
 - al2 ami version: 20250725
 - al2023 ami version: 20250725
