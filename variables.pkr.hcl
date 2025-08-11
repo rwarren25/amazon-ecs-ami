@@ -258,7 +258,13 @@ variable "region_dns_suffix" {
   default     = ""
 }
 
-### Custom IDX Environment variables
+variable "custom_endpoint_ec2" {
+  type        = string
+  description = "Custom EC2 endpoint to use for building AMIs"
+  default     = ""
+}
+
+## Custom IDX Environment variables
 
 variable "profile" {
   type        = string
