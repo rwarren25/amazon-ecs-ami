@@ -264,7 +264,7 @@ variable "custom_endpoint_ec2" {
   default     = ""
 }
 
-## Custom IDX Environment variables
+### Custom IDX Environment variables
 
 variable "profile" {
   type        = string
