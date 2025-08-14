@@ -5,10 +5,6 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 # Load common functions.
 . "${DIR}/functions.sh" || exit 1
 
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
-# Load common functions.
-. "${DIR}/functions.sh" || exit 1
-
 if [ -n "$AIR_GAPPED" ]; then
     echo "Air-gapped region, assuming ecs-init and dependencies will be in additional-packages/ directory"
     exit 0
