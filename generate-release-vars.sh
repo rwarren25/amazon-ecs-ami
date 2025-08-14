@@ -84,8 +84,8 @@ EOF
 "al2023")
     # AL2023
     ami_id_al2023_x86=$(aws ssm get-parameters --region "$region" --names /aws/service/ami-amazon-linux-latest/al2023-ami-minimal-kernel-default-x86_64 --query 'Parameters[0].[Value]' --output text)
-    ami_name_al2023_x86=$(aws ec2 describe-images --region "$region" --owner amazon --image-id "$ami_id_al2023_x86" --query 'Images[0].Name' --output text)
-    kernel_version_al2023_x86=$(grep -o -e "-kernel-[1-9.]*" <<<"$ami_name_al2023_x86")
+    ami_name_al2023_x86=$(aws ec2 describe-images --region "$region" --owner "679593333241" --filters "Name=name,Values=CIS Amazon Linux 2023 Benchmark - Level 1 -*" "Name=architecture,Values=x86_64" --query "sort_by(Images, &CreationDate)[-1:].[Name]" --output text)
+    #kernel_version_al2023_x86=$(grep -o -e "-kernel-[1-9.]*" <<<"$ami_name_al2023_x86")
 
     # AL2023 ARM
     ami_id_al2023_arm=$(aws ssm get-parameters --region "$region" --names /aws/service/ami-amazon-linux-latest/al2023-ami-minimal-kernel-default-arm64 --query 'Parameters[0].[Value]' --output text)
