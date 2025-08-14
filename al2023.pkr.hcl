@@ -80,7 +80,7 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "mkdir /tmp/additional-packages"
+      "sudo mkdir /tmp/additional-packages"
     ]
   }
 
