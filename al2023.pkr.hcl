@@ -80,7 +80,7 @@ build {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
-      "sudo mkdir /tmp/additional-packages"
+      "mkdir /tmp/additional-packages"
     ]
   }
 
@@ -95,6 +95,17 @@ build {
   provisioner "file" {
     source      = "additional-packages/"
     destination = "/tmp/additional-packages"
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    script = "scripts/falcon-sensor-download.sh"
+    environment_vars = [
+      "CLIENT_ID=${var.cs_falcon_client_id}",
+      "CLIENT_SECRET=${var.cs_falcon_client_secret}",
+      "FILENAME=${var.cs_falcon_filename}",
+      "BASEURL=${var.cs_falcon_baseurl}"
+    ]
   }
 
   provisioner "shell" {
@@ -144,17 +155,6 @@ build {
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-additional-packages.sh"
-  }
-
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
-    script = "scripts/falcon-sensor-download.sh"
-    environment_vars = [
-      "CLIENT_ID=${var.cs_falcon_client_id}",
-      "CLIENT_SECRET=${var.cs_falcon_client_secret}",
-      "FILENAME=${var.cs_falcon_filename}",
-      "BASEURL=${var.cs_falcon_baseurl}"
-    ]
   }
 
   ### exec
