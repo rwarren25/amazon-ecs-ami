@@ -283,3 +283,33 @@ variable "subnet_id" {
   description = "ID of subnet to deploy to"
   default     = "subnet-00fd52dae17659894"
 }
+
+variable "cs_falcon_client_id" {
+  type        = string
+  description = "API client ID for CrowdStrike environment"
+}
+
+variable "cs_falcon_client_secret" {
+  type        = string
+  description = "API client secret for CrowdStrike environment"
+}
+
+variable "cs_falcon_filename" {
+  type        = string
+  description = "Filename of CrowdStrike Falcon installer"
+}
+
+variable "cs_falcon_cid" {
+  type        = string
+  description = "Customer ID for CrowdStrike environment"
+}
+
+variable "cs_falcon_exe" {
+  type        = string
+  description = "Full path of CrowdStrike Falcon executable"
+}
+
+variable "cs_falcon_baseurl" {
+  type        = string
+  description = "Base URL of CrowdStrike API"
+}
