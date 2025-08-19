@@ -154,10 +154,7 @@ EOF
 
 if [ -z "$ECS_INIT_URL" ]; then
     ARCH=$(uname -m)
-    host_suffix=""
-    if grep -q "^cn-" <<<"$REGION"; then
-        host_suffix=".cn"
-    fi
+    host_suffix=$(get_default_aws_host_suffix "$REGION")
     ECS_INIT_URL="https://s3.$REGION.amazonaws.com${host_suffix}/amazon-ecs-agent-$REGION/ecs-init-$AGENT_VERSION-$INIT_REV.$AL_NAME.$ARCH.rpm"
 fi
 
