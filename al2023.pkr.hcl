@@ -246,6 +246,15 @@ build {
     script = "scripts/install-service-connect-appnet.sh"
   }
 
+  provisioner "file" {
+    source      = "amazon-ecs-logs-collector"
+    destination = "/tmp"
+  }
+
+  provisioner "shell" {
+    script = "scripts/install-ecs-logs-collector.sh"
+  }
+
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/cleanup.sh"
