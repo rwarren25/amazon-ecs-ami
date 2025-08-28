@@ -247,6 +247,11 @@
 ## 2025730
 - ecs version: 1.97.0
 
+## 20250828
+- al2 ami version: 20250828
+- al2023 ami version: 20250828
+- enhancement: Update exec ssm version to 3.3.2958.0
+
 ## 20250821
 - ecs version: 1.98.0
 - al2 ami version: 20250821
