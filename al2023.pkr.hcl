@@ -252,6 +252,7 @@ build {
   }
 
   provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/install-ecs-logs-collector.sh"
   }
 
