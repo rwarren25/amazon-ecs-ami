@@ -247,10 +247,12 @@
 ## 2025730
 - ecs version: 1.97.0
 
-## 20250915
-- al2023 ami version: 20250915
+## 20250916
+- al2023 ami version: 20250916
 - source al2023 ami: al2023-ami-minimal-2023.8.20250908.0-kernel-6.1-x86_64
 - source al2023 arm ami: al2023-ami-minimal-2023.8.20250908.0-kernel-6.1-arm64
+- enhancement: explicitly install nvidia-persistenced on the AL2023 GPU AMI [#530](https://github.com/aws/amazon-ecs-ami/pull/530)
+- enhancement: install nvidia-open on the AL2023 GPU AMI [#531](https://github.com/aws/amazon-ecs-ami/pull/531)
 
 ## 20250909
 - ecs version: 1.99.0
