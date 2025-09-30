@@ -243,19 +243,6 @@ https://github.com/aws/amazon-ecs-ami/blob/main/CHANGELOG.md#$ami_version
         fi
     fi
 
-    # AL1
-    # Include AL1 release notes if there was an al1 release
-    if ! is_ami_excluded "al1"; then
-        al1_header="
-### Amazon ECS-optimized Amazon Linux AMI
----"
-        release_notes="${release_notes}${al1_header}"
-
-        read ami_name_al1 agent_version_al1 docker_version_al1 source_ami_name_al1 <<<$(get_ami_details "/aws/service/ecs/optimized-ami/amazon-linux/recommended")
-        add_ami_to_release_notes "The Amazon ECS-optimized Amazon Linux AMI is deprecated as of April 15, 2021. After that date, Amazon ECS will continue providing critical and important security updates for the AMI but will not add support for new features.
-" "$ami_name_al1" "$agent_version_al1" "$docker_version_al1" "$AL1_CONTAINERD_VERSION" "$AL1_RUNC_VERSION" "" "" "$source_ami_name_al1" ""
-    fi
-
     echo -n "$release_notes"
 }
 
