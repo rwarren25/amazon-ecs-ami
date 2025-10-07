@@ -57,6 +57,7 @@ nvidia_driver_version_al2 = "550.163.01"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63c72f (Release 20251014 (#559))
 =======
@@ -74,6 +75,8 @@ nvidia_driver_version_al2023 = "580.126.09"
 >>>>>>> 1e90dbe (Release 20251014 (#559))
 =======
 >>>>>>> 23ad5bd (Fix Nvidia driver version tracking file name)
+=======
+>>>>>>> 73d54d4 (Fix NVIDIA Driver version tracking in GH Actions)
 nvidia_driver_version_al2023 = "580.126.09"
 =======
 =======
@@ -81,6 +84,8 @@ nvidia_driver_version_al2023 = "580.126.09"
 =======
 =======
 >>>>>>> 25d7786 (Fix Nvidia driver version tracking file name)
+=======
+>>>>>>> 0f1d0c6 (Fix NVIDIA Driver version tracking in GH Actions)
 =======
 >>>>>>> c63c72f (Release 20251014 (#559))
 >>>>>>> 71a21c6 (Release 20251014 (#559))
@@ -101,6 +106,7 @@ cuda_version_al2 = "12.4.1"
 nvidia_driver_version_al2023 = "570.133.20"
 >>>>>>> 5fc16c7 (Fix Nvidia driver version tracking file name)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 nvidia_driver_version_al2023 = "580.65.06"
 >>>>>>> 40879b3 (Fix NVIDIA Driver version tracking in GH Actions)
@@ -112,3 +118,8 @@ cuda_version_al2 = "12.4.1"
 >>>>>>> a01bf09 (Fix NVIDIA Driver version tracking in GH Actions)
 =======
 >>>>>>> 23ad5bd (Fix Nvidia driver version tracking file name)
+=======
+=======
+nvidia_driver_version_al2023 = "580.65.06"
+>>>>>>> 40879b3 (Fix NVIDIA Driver version tracking in GH Actions)
+>>>>>>> 73d54d4 (Fix NVIDIA Driver version tracking in GH Actions)
