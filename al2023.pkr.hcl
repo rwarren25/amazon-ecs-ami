@@ -238,6 +238,11 @@ build {
 
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
+    script = "scripts/enable-cloudwatch-agent.sh"
+  }
+
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     script = "scripts/enable-services.sh"
   }
 
