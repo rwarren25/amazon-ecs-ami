@@ -37,7 +37,9 @@ source "amazon-ebs" "al2023" {
     most_recent        = true
     include_deprecated = true
   }
-  assume_role   = "${var.instance_profile_arn}
+  assume_role {
+    role_arn = "${var.instance_profile_arn}"
+  }
   ami_ou_arns   = "${var.ami_ou_arns}"
   ami_org_arns  = "${var.ami_org_arns}"
   ami_users     = "${var.ami_users}"
