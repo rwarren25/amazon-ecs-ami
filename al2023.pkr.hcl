@@ -37,19 +37,17 @@ source "amazon-ebs" "al2023" {
     most_recent        = true
     include_deprecated = true
   }
-  assume_role {
-    role_arn = "${var.instance_profile_arn}"
-  }
-  ami_ou_arns   = "${var.ami_ou_arns}"
-  ami_org_arns  = "${var.ami_org_arns}"
-  ami_users     = "${var.ami_users}"
-  ssh_interface = "public_dns"
-  ssh_username  = "ec2-user"
-  tags          = "${local.merged_tags}"
-  run_tags      = "${var.run_tags}"
-  profile       = var.profile
-  vpc_id        = var.vpc_id
-  subnet_id     = var.subnet_id
+  ami_ou_arns          = "${var.ami_ou_arns}"
+  ami_org_arns         = "${var.ami_org_arns}"
+  ami_users            = "${var.ami_users}"
+  ssh_interface        = "public_dns"
+  ssh_username         = "ec2-user"
+  tags                 = "${local.merged_tags}"
+  run_tags             = "${var.run_tags}"
+  profile              = var.profile
+  vpc_id               = var.vpc_id
+  subnet_id            = var.subnet_id
+  iam_instance_profile = var.iam_instance_profile
 }
 
 build {
