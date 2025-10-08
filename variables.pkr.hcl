@@ -313,3 +313,9 @@ variable "cs_falcon_baseurl" {
   type        = string
   description = "Base URL of CrowdStrike API"
 }
+
+variable "instance_profile_arn" {
+  type        = string
+  description = "Instance profile ARN for cloud agent to reach SSM"
+  default     = "arn:aws:iam::899750895174:instance-profile/CloudWatch-Agent-Role"
+}
