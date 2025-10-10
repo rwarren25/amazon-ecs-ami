@@ -18,4 +18,8 @@ nvidia_driver_version_al2023 = "580.95.05"
 cuda_version_al2 = "12.4.1"
 =======
 nvidia_driver_version_al2023 = "580.65.06"
+<<<<<<< HEAD
 >>>>>>> 40879b3 (Fix NVIDIA Driver version tracking in GH Actions)
+=======
+cuda_version_al2 = "12.4.1"
+>>>>>>> f32b025 (Add CUDA package version tracking to GH actions)
