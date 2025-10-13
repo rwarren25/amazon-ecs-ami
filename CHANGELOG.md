@@ -247,6 +247,12 @@
 ## 2025730
 - ecs version: 1.97.0
 
+## 20251013
+- ecs version: 1.100.0
+- al2 ami version: 20251013
+- al2023 ami version: 20251013
+- enhancement: Update exec ssm version to 3.3.3050.0
+
 ## 20251006
 - al2 ami version: 20251006
 - source al2 ami: amzn2-ami-minimal-hvm-2.0.20250929.2-x86_64-ebs
