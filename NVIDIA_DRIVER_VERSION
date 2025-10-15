@@ -14,6 +14,9 @@
 
 nvidia_driver_version_al2 = "550.163.01"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63c72f (Release 20251014 (#559))
 nvidia_driver_version_al2023 = "580.95.05"
 cuda_version_al2 = "12.4.1"
 =======
