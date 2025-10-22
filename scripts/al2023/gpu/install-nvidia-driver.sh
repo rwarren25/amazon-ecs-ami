@@ -9,12 +9,16 @@ fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # Set executable permissions and move kmod utils to /usr/bin
 # kmod utilities are copied to /tmp by Packer
 sudo chmod +x "/tmp/kmod-util"
 sudo mv "/tmp/kmod-util" /usr/bin/
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # Configure DKMS for parallel compilation to reduce NVIDIA driver build time
@@ -48,6 +52,9 @@ sudo dnf install -y dkms kernel-modules-extra-$(uname -r) kernel-devel-$(uname -
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
 =======
 
+=======
+
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # Configure DKMS for parallel compilation to reduce NVIDIA driver build time
 # This optimization enables multi-threaded compilation using all available CPU cores,
 sudo mkdir -p /etc/dkms
@@ -66,9 +73,12 @@ sudo dnf install -y \
 
 # Lock kernel version to prevent automatic updates that could break DKMS modules
 sudo dnf versionlock 'kernel*'
+<<<<<<< HEAD
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 
 # Enable DKMS service
 sudo systemctl enable --now dkms
@@ -79,6 +89,9 @@ sudo dnf install -y nvidia-release
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 ### Kernel Module Archive Functions ###
@@ -153,6 +166,7 @@ archive-grid-kmod
 # NVIDIA installation doc: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#amazon-installation
 # Amazon Linux 2023 repost: https://repost.aws/articles/ARwfQMxiC-QMOgWykD9mco1w/install-nvidia-gpu-driver-cuda-toolkit-nvidia-container-toolkit-on-amazon-ec2-instances-running-amazon-linux-2023-al2023
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Install NVIDIA drivers and tools
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
@@ -161,6 +175,8 @@ archive-grid-kmod
 =======
 # Install NVIDIA drivers and tools
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 sudo dnf install -y nvidia-open \
     nvidia-fabric-manager \
     pciutils \
@@ -172,6 +188,9 @@ sudo dnf install -y nvidia-open \
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # Lock NVIDIA packages to prevent automatic updates
@@ -179,6 +198,7 @@ sudo dnf install -y nvidia-open \
 sudo dnf versionlock 'nvidia*' 'kmod*' 'libnvidia*'
 
 ### P6 Instance Support ###
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ### Package installation and setup to support P6 instances
@@ -188,6 +208,8 @@ sudo dnf versionlock 'nvidia*' 'kmod*' 'libnvidia*'
 =======
 ### Package installation and setup to support P6 instances
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # Install base requirements
 sudo dnf install -y libibumad infiniband-diags nvlsm
 
@@ -200,6 +222,9 @@ echo ib_umad | sudo tee /etc/modules-load.d/ib_umad.conf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 
@@ -213,6 +238,7 @@ sudo systemctl enable nvidia-kmod-load.service
 
 ### NVIDIA Service Configuration ###
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Configure NVIDIA Services
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
@@ -221,6 +247,8 @@ sudo systemctl enable nvidia-kmod-load.service
 =======
 ### Configure NVIDIA Services
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # The Fabric Manager service needs to be started and enabled on EC2 P4d instances
 # in order to configure NVLinks and NVSwitches
 sudo systemctl enable nvidia-fabricmanager
@@ -231,6 +259,9 @@ sudo systemctl enable nvidia-persistenced
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 
@@ -238,9 +269,12 @@ sudo systemctl enable nvidia-persistenced
 # Remove the hardcoded DKMS configuration to prevent it from being baked into the AMI
 sudo rm -f /etc/dkms/nvidia.conf
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
+=======
+>>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
