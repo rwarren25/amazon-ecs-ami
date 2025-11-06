@@ -100,6 +100,7 @@ sudo dnf versionlock clear
 echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
 
+<<<<<<< HEAD
 ## Version-locked packages in AL2023 ECS GPU AMIs
 
 Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
@@ -381,6 +382,8 @@ sudo dnf versionlock clear
 ```
 > [!IMPORTANT]
 > When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
+=======
+>>>>>>> 8fb9159 (README update to support g6f.large instance types)
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
