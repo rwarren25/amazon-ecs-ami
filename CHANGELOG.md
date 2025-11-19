@@ -247,6 +247,13 @@
 ## 2025730
 - ecs version: 1.97.0
 
+## 20251119
+- al2 ami version: 20251119
+- al2023 ami version: 20251119
+- source al2023 ami: al2023-ami-minimal-2023.9.20251117.1-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.9.20251117.1-kernel-6.1-arm64
+- ecs version: 1.101.0
+
 ## 20251112
 - al2 ami version: 20251112
 - source_ami_al2: amzn2-ami-minimal-hvm-2.0.20251110.1-x86_64-ebs
