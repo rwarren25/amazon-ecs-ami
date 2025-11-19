@@ -18,9 +18,6 @@ error_msg() {
 # Package to exclude when checking for security updates
 EXCLUDE_SEC_UPDATES_PKGS="nvidia*,docker*,cuda*,containerd*,runc*"
 
-# Package to exclude when checking for security updates
-EXCLUDE_SEC_UPDATES_PKGS="nvidia*,docker*,cuda*,containerd*,runc*"
-
 # Paths to get the ami ids from ssm params
 AL2_PATH="/aws/service/ecs/optimized-ami/amazon-linux-2/recommended"
 AL2_ARM_PATH="/aws/service/ecs/optimized-ami/amazon-linux-2/arm64/recommended"
