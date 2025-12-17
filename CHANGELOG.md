@@ -247,6 +247,10 @@
 ## 2025730
 - ecs version: 1.97.0
 
+## 20251217
+- al2, al2023 ami version: 20251217
+- ecs version: 1.101.1
+
 ## 20251216
 - al2, al2023 ami version: 20251216
 - enhancement: bump containerd to 2.1.5 [#598](https://github.com/aws/amazon-ecs-ami/pull/598) 
