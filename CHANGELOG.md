@@ -247,6 +247,12 @@
 ## 2025730
 - ecs version: 1.97.0
 
+## 20260108
+- al2, al2023 ami version: 20260108
+- source al2023 ami: al2023-ami-minimal-2023.10.20260105.0-kernel-6.1-x86_64
+- source al2023 arm ami: al2023-ami-minimal-2023.10.20260105.0-kernel-6.1-arm64
+- enhancement: Bump docker version to 25.0.14 and runc version to 1.3.4 [#607](https://github.com/aws/amazon-ecs-ami/pull/607)
+
 ## 20251217
 - al2, al2023 ami version: 20251217
 - ecs version: 1.101.1
