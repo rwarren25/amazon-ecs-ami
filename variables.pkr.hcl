@@ -240,7 +240,7 @@ variable "custom_endpoint_ec2" {
 variable "profile" {
   type        = string
   description = "Specify aws credentials profile to use"
-  default     = "devacct"
+  default     = "dev"
 }
 
 variable "vpc_id" {
