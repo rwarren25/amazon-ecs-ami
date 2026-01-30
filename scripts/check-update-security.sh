@@ -145,7 +145,7 @@ if [[ $platform == al2023* ]]; then
     if [[ $platform == *gpu ]]; then
         check_upgrade_options="nvidia-driver-cuda"
     fi
-    command_params="commands=[\"dnf --refresh check-upgrade --releasever=latest $check_upgrade_options -q\"]"
+    command_params="commands=[\"dnf --refresh check-upgrade --releasever=latest --disableplugin=versionlock $check_upgrade_options -q\"]"
 elif [ "$platform" = "al2_gpu" ]; then
 if [[ $platform == al2023* ]]; then
     check_upgrade_options="--sec-severity Critical --exclude=$EXCLUDE_SEC_UPDATES_PKGS"
