@@ -14,44 +14,15 @@ sudo mv /tmp/ecs/ecs.config /var/lib/ecs/ecs.config
 ### Configure GPU Container Runtime
 # Create required directories
 sudo mkdir -p /etc/docker-runtimes.d
-<<<<<<< HEAD
 
 # Create the NVIDIA runtime script
 sudo tee /etc/docker-runtimes.d/nvidia <<'EOF'
 #!/bin/sh
 exec /usr/bin/nvidia-container-runtime "$@"
-=======
-sudo mkdir -p /usr/share/docker-runtime-nvidia
-
-# Create the nvidia runtime script
-sudo tee /etc/docker-runtimes.d/nvidia <<'EOF'
-#!/bin/sh
-if [ ! -x /usr/sbin/runc ]; then
-    runc_path=/usr/bin/docker-runc
-else
-    runc_path=/usr/sbin/runc
-fi
-exec /usr/bin/oci-add-hooks --hook-config-path /usr/share/docker-runtime-nvidia/hook-config.json --runtime-path "$runc_path" "$@"
-EOF
-
-# Create the NVIDIA container hook configuration
-sudo tee /usr/share/docker-runtime-nvidia/hook-config.json <<'EOF'
-{
-  "hooks": {
-    "prestart": [
-      {
-        "path": "/usr/bin/nvidia-container-runtime-hook",
-        "args": ["/usr/bin/nvidia-container-runtime-hook", "prestart"]
-      }
-    ]
-  }
-}
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
 EOF
 
 # Set appropriate file permissions
 sudo chmod 755 /etc/docker-runtimes.d/nvidia
-<<<<<<< HEAD
 
 ### Configure nvidia-container-runtime for debug logging
 # Use nvidia-ctk config to set log-level to debug and debug log path to /var/log/ecs/
@@ -68,6 +39,3 @@ sudo tee /etc/logrotate.d/nvidia-container-runtime <<'EOF'
     copytruncate
 }
 EOF
-=======
-sudo chmod 644 /usr/share/docker-runtime-nvidia/hook-config.json
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)

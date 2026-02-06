@@ -361,6 +361,9 @@ sudo dnf install -y nvidia-open \
     nvidia-container-toolkit \
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 95bd20b (Switch AL2023 GPU AMI from legacy OCI hooks to CDI (#541))
     nvidia-persistenced
 
 <<<<<<< HEAD
