@@ -192,7 +192,6 @@ sudo dnf install -y nvidia-open \
     pciutils \
     xorg-x11-server-Xorg \
     nvidia-container-toolkit \
-    oci-add-hooks \
     nvidia-persistenced
 
 <<<<<<< HEAD
