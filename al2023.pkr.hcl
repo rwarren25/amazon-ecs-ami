@@ -242,7 +242,8 @@ build {
 
   provisioner "shell" {
     environment_vars = [
-      "AMI_TYPE=${source.name}"
+      "AMI_TYPE=${source.name}",
+      "AIR_GAPPED=${var.air_gapped}"
     ]
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     scripts = [

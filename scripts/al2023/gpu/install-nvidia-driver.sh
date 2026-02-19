@@ -206,6 +206,7 @@ sudo dnf install -y nvidia-release
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
 =======
@@ -224,6 +225,14 @@ sudo dnf install -y nvidia-release
 >>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
 =======
 >>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
+=======
+# Temporary fix: ISO regions cannot use dualstack URLs, remove them from the repo file
+if [ -n "$AIR_GAPPED" ]; then
+    echo "ISO regions cannot use dualstack URLs, removing from nvidia repo"
+    sudo sed -i 's/\$dualstack//g' /etc/yum.repos.d/amazonlinux-nvidia.repo
+fi
+
+>>>>>>> d4b4655 (fix(gpu): Remove dualstack URLs from nvidia repo for ISO regions)
 ### Kernel Module Archive Functions ###
 # These functions pre-compile and archive different NVIDIA driver variants
 # This allows runtime switching between proprietary, open-source, and GRID drivers
