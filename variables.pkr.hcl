@@ -259,6 +259,12 @@ variable "custom_endpoint_ec2" {
   default     = ""
 }
 
+variable "nvidia_driver_major_al2023" {
+  type        = string
+  description = "Pinned NVIDIA driver major version for AL2023 GPU AMIs. Only driver versions within this major will be installed."
+  default     = "580"
+}
+
 ## Custom IDX Environment variables
 
 variable "profile" {

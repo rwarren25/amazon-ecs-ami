@@ -240,8 +240,17 @@ fi
 # open, and GRID) in /var/lib/dkms-archive. All three must be on the same driver
 # version to ensure proper functionality. The GRID kmod comes from the EC2 GRID
 # .run file in S3, while proprietary and open come from the AL2023 nvidia repo.
-# If the repo and S3 versions differ, we use the lower of the two to ensure both
-# sources can provide it.
+#
+# The exact driver version is determined by the security check script
+# (check-update-security.sh) as min(repo, S3 GRID) within the pinned major,
+# and tracked in the NVIDIA_DRIVER_VERSION file uploaded by Packer.
+
+NVIDIA_DRIVER_FULL_VERSION=$(grep "^nvidia_driver_version_al2023" /tmp/NVIDIA_DRIVER_VERSION | awk -F'"' '{print $2}')
+if [[ -z "$NVIDIA_DRIVER_FULL_VERSION" ]]; then
+  echo "ERROR: Could not read nvidia_driver_version_al2023 from /tmp/NVIDIA_DRIVER_VERSION"
+  exit 1
+fi
+echo "Using NVIDIA driver version: ${NVIDIA_DRIVER_FULL_VERSION}"
 
 # Some regions do not have access to the GRID driver S3 bucket, skip GRID driver
 skip_grid_driver=""
@@ -252,6 +261,7 @@ fi
 
 EC2_GRID_DRIVER_S3_BUCKET="ec2-linux-nvidia-drivers"
 
+<<<<<<< HEAD
 if [[ -z "$skip_grid_driver" ]]; then
   LATEST_GRID_DRIVER_VERSION=$(aws s3 ls --recursive s3://${EC2_GRID_DRIVER_S3_BUCKET}/ --no-sign-request \
     | grep -Eo "(NVIDIA-Linux-x86_64-)[0-9]+\.[0-9]+\.[0-9]+(-grid-aws\.run)" \
@@ -285,6 +295,8 @@ fi
 echo "Selected NVIDIA driver version: ${NVIDIA_DRIVER_FULL_VERSION}"
 
 >>>>>>> 927c5e8 (bugfix: install GRID driver from .run file to include nvidia-gridd for g6f vGPU licensing)
+=======
+>>>>>>> 856640b (pin nvidia major ver)
 ### Kernel Module Archive Functions ###
 # These functions pre-compile and archive different NVIDIA driver variants
 # This allows runtime switching between proprietary, open-source, and GRID drivers
