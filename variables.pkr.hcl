@@ -270,7 +270,7 @@ variable "nvidia_driver_major_al2023" {
 variable "profile" {
   type        = string
   description = "Specify aws credentials profile to use"
-  default     = "dev"
+  default     = "default"
 }
 
 variable "vpc_id" {
