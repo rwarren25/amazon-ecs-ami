@@ -130,7 +130,7 @@ variable "source_ami_al2023arm" {
 }
 
 variable "source_ami_owners" {
-  type        = list(string)
+  type        = string
   description = "Accounts to search when filtering source AMIs. Defaults to Amazon-owned AMIs."
   default     = ["amazon"]
 }

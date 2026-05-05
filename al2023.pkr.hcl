@@ -35,7 +35,7 @@ source "amazon-ebs" "al2023" {
     filters = {
       name = "${var.source_ami_al2023}"
     }
-    owners             = "679593333241"
+    owners             = var.source_ami_owners
     most_recent        = true
     include_deprecated = true
   }
