@@ -150,7 +150,7 @@ variable "iam_instance_profile" {
 variable "subnet_id" {
   type        = string
   description = "VPC subnet ID for the build instance. Must support the connectivity method specified by 'ssh_interface'."
-  default     = ""
+  default     = "subnet-00fd52dae17659894"
 }
 
 variable "kernel_version_al2023" {
@@ -277,46 +277,4 @@ variable "vpc_id" {
   type        = string
   description = "ID of VPC to deploy to"
   default     = "vpc-0a21b99c4a2bd5ff5"
-}
-
-variable "subnet_id" {
-  type        = string
-  description = "ID of subnet to deploy to"
-  default     = "subnet-00fd52dae17659894"
-}
-
-variable "cs_falcon_client_id" {
-  type        = string
-  description = "API client ID for CrowdStrike environment"
-}
-
-variable "cs_falcon_client_secret" {
-  type        = string
-  description = "API client secret for CrowdStrike environment"
-}
-
-variable "cs_falcon_filename" {
-  type        = string
-  description = "Filename of CrowdStrike Falcon installer"
-}
-
-variable "cs_falcon_cid" {
-  type        = string
-  description = "Customer ID for CrowdStrike environment"
-}
-
-variable "cs_falcon_exe" {
-  type        = string
-  description = "Full path of CrowdStrike Falcon executable"
-}
-
-variable "cs_falcon_baseurl" {
-  type        = string
-  description = "Base URL of CrowdStrike API"
-}
-
-variable "iam_instance_profile" {
-  type        = string
-  description = "Instance profile name for cloud agent to reach SSM"
-  default     = "CloudWatch-Agent-Role"
 }
