@@ -107,17 +107,6 @@ build {
 
   provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
-    script = "scripts/falcon-sensor-download.sh"
-    environment_vars = [
-      "CLIENT_ID=${var.cs_falcon_client_id}",
-      "CLIENT_SECRET=${var.cs_falcon_client_secret}",
-      "FILENAME=${var.cs_falcon_filename}",
-      "BASEURL=${var.cs_falcon_baseurl}"
-    ]
-  }
-
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
       "sudo dnf install -y ${local.packages_al2023}",
@@ -170,23 +159,6 @@ build {
   provisioner "file" {
     source      = "files/amazon-ssm-agent.gpg"
     destination = "/tmp/amazon-ssm-agent.gpg"
-  }
-
-  provisioner "shell" {
-    execute_command = "{{.Vars}} bash '{{.Path}}'"
-    environment_vars = [
-      "CID=${var.cs_falcon_cid}",
-      "EXE=${var.cs_falcon_exe}"
-    ]
-    inline_shebang = "/bin/sh -ex"
-    inline = [
-      "echo \"Setting Falcon sensor settings\"",
-      "sudo $EXE -s -f --cid=$CID",
-      "sudo $EXE -d -f --aid",
-      "sudo $EXE -s --billing=metered",
-      "sudo systemctl disable --now falcon-sensor",
-      "echo \"Falcon sensor settings complete\""
-    ]
   }
 
   provisioner "shell" {
