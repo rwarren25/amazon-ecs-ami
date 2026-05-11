@@ -167,4 +167,4 @@ retry_rm /var/cache/yum
 # Clean dnf cache with retry
 retry_rm /var/cache/dnf
 
-sudo touch /etc/machine-id
+sudo install -m 0444 /dev/null /etc/machine-id

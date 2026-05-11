@@ -274,6 +274,14 @@ build {
     script = "scripts/cleanup.sh"
   }
 
+  provisioner "shell" {
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    inline_shebang  = "/bin/sh -ex"
+    inline = [
+      "sudo restorecon -Rv /etc /usr/lib/systemd /usr/bin /usr/sbin /var/lib || true"
+    ]
+  }
+
   post-processor "manifest" {
     output     = "manifest.json"
     strip_path = true
