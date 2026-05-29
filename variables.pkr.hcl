@@ -48,7 +48,7 @@ variable "block_device_size_gb" {
 variable "ecs_agent_version" {
   type        = string
   description = "ECS agent version to build AMI with."
-  default     = "1.103.0"
+  default     = "1.103.2"
 }
 
 variable "ecs_init_rev" {
@@ -66,7 +66,7 @@ variable "docker_version" {
 variable "containerd_version" {
   type        = string
   description = "Containerd version to build AMI with."
-  default     = "2.2.1"
+  default     = "2.1.7"
 }
 
 variable "runc_version" {
@@ -84,7 +84,7 @@ variable "docker_version_al2023" {
 variable "containerd_version_al2023" {
   type        = string
   description = "Containerd version to build AL2023 AMI with."
-  default     = "2.2.1"
+  default     = "2.2.3"
 }
 
 variable "runc_version_al2023" {

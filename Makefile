@@ -1,4 +1,4 @@
-PACKER_VERSION := 1.7.4
+PACKER_VERSION := 1.10.3
 KERNEL := $(shell uname -s | tr A-Z a-z)
 ARCH := $(shell uname -m)
 
@@ -46,55 +46,68 @@ validate: check-region init
 	./packer validate -var "region=${REGION}" .
 
 .PHONY: al2
-al2: check-region init validate release-al2.auto.pkrvars.hcl
+al2: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2" -var "region=${REGION}" .
 
 .PHONY: al2arm
-al2arm: check-region init validate release-al2.auto.pkrvars.hcl
+al2arm: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2arm" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2arm" -var "region=${REGION}" .
 
 .PHONY: al2gpu
-al2gpu: check-region init validate release-al2.auto.pkrvars.hcl
+al2gpu: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2gpu" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2gpu" -var "region=${REGION}" .
 
 .PHONY: al2keplergpu
-al2keplergpu: check-region init validate release-al2.auto.pkrvars.hcl
+al2keplergpu: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2keplergpu" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2keplergpu" -var "region=${REGION}" .
 
 .PHONY: al2inf
-al2inf: check-region init validate release-al2.auto.pkrvars.hcl
+al2inf: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2inf" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2inf" -var "region=${REGION}" .
 
 .PHONY: al2kernel5dot10
-al2kernel5dot10: check-region init validate release-al2.auto.pkrvars.hcl
+al2kernel5dot10: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2kernel5dot10" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2kernel5dot10" -var "region=${REGION}" .
 
 .PHONY: al2kernel5dot10arm
-al2kernel5dot10arm: check-region init validate release-al2.auto.pkrvars.hcl
+al2kernel5dot10arm: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2kernel5dot10arm" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2kernel5dot10arm" -var "region=${REGION}" .
 
 .PHONY: al2kernel5dot10gpu
-al2kernel5dot10gpu: check-region init validate release-al2.auto.pkrvars.hcl
+al2kernel5dot10gpu: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2kernel5dot10gpu" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2kernel5dot10gpu" -var "region=${REGION}" .
 
 .PHONY: al2kernel5dot10inf
-al2kernel5dot10inf: check-region init validate release-al2.auto.pkrvars.hcl
+al2kernel5dot10inf: check-region init release-al2.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2kernel5dot10inf" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2kernel5dot10inf" -var "region=${REGION}" .
 
 .PHONY: al2023
-al2023: check-region init validate release-al2023.auto.pkrvars.hcl
+al2023: check-region init release-al2023.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2023" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2023" -var "region=${REGION}" .
 
 .PHONY: al2023arm
-al2023arm: check-region init validate release-al2023.auto.pkrvars.hcl
+al2023arm: check-region init release-al2023.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2023arm" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2023arm" -var "region=${REGION}" .
 
 .PHONY: al2023neu
-al2023neu: check-region init validate release-al2023.auto.pkrvars.hcl
+al2023neu: check-region init release-al2023.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2023neu" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2023neu" -var "region=${REGION}" .
 
 .PHONY: al2023gpu
-al2023gpu: check-region init validate release-al2023.auto.pkrvars.hcl
+al2023gpu: check-region init release-al2023.auto.pkrvars.hcl
+	./packer validate -only="amazon-ebs.al2023gpu" -var "region=${REGION}" .
 	./packer build -only="amazon-ebs.al2023gpu" -var "region=${REGION}" .
 
 shellcheck:
