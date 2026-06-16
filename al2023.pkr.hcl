@@ -189,6 +189,7 @@ build {
   provisioner "shell" {
     pause_before        = "30s"
     start_retry_timeout = "5m"
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline = [
       "echo 'instance back up after reboot:' && uptime"
     ]
