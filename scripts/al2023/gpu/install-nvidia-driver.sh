@@ -6,48 +6,10 @@ if [[ $AMI_TYPE != "al2023"*"gpu" ]]; then
     exit 0
 fi
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # Set executable permissions and move kmod utils to /usr/bin
 # kmod utilities are copied to /tmp by Packer
 sudo chmod +x "/tmp/kmod-util"
 sudo mv "/tmp/kmod-util" /usr/bin/
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
 
 # Configure DKMS for parallel compilation to reduce NVIDIA driver build time
 # This optimization enables multi-threaded compilation using all available CPU cores,
@@ -67,127 +29,6 @@ sudo dnf install -y \
 
 # Lock kernel version to prevent automatic updates that could break DKMS modules
 sudo dnf versionlock 'kernel*'
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-### Install GPU Drivers and Required Packages ###
-# NVIDIA installation doc: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#amazon-installation
-# Amazon Linux 2023 repost: https://repost.aws/articles/ARwfQMxiC-QMOgWykD9mco1w/install-nvidia-gpu-driver-cuda-toolkit-nvidia-container-toolkit-on-amazon-ec2-instances-running-amazon-linux-2023-al2023
-
-# Install base requirements
-sudo dnf install -y dkms kernel-modules-extra-$(uname -r) kernel-devel-$(uname -r)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-
-=======
-
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-# Configure DKMS for parallel compilation to reduce NVIDIA driver build time
-# This optimization enables multi-threaded compilation using all available CPU cores,
-sudo mkdir -p /etc/dkms
-echo "MAKE[0]=\"'make' -j$(nproc --all) modules\"" | sudo tee /etc/dkms/nvidia.conf
-
-### Base System Preparation ###
-# Install kernel development packages for current running kernel
-RUNNING_KERNEL=$(uname -r)
-sudo dnf install -y \
-  "dnf-command(versionlock)" \
-  "kernel-devel-${RUNNING_KERNEL}" \
-  "kernel-headers-${RUNNING_KERNEL}" \
-  "kernel-modules-extra-${RUNNING_KERNEL}" \
-  "kernel-modules-extra-common-${RUNNING_KERNEL}" \
-  dkms
-
-# Lock kernel version to prevent automatic updates that could break DKMS modules
-sudo dnf versionlock 'kernel*'
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 2d4bc5e (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
->>>>>>> 2d4bc5e (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 71921fa (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-
-=======
-
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-# Configure DKMS for parallel compilation to reduce NVIDIA driver build time
-# This optimization enables multi-threaded compilation using all available CPU cores,
-sudo mkdir -p /etc/dkms
-echo "MAKE[0]=\"'make' -j$(nproc --all) modules\"" | sudo tee /etc/dkms/nvidia.conf
-
-### Base System Preparation ###
-# Install kernel development packages for current running kernel
-RUNNING_KERNEL=$(uname -r)
-sudo dnf install -y \
-  "dnf-command(versionlock)" \
-  "kernel-devel-${RUNNING_KERNEL}" \
-  "kernel-headers-${RUNNING_KERNEL}" \
-  "kernel-modules-extra-${RUNNING_KERNEL}" \
-  "kernel-modules-extra-common-${RUNNING_KERNEL}" \
-  dkms
-
-# Lock kernel version to prevent automatic updates that could break DKMS modules
-sudo dnf versionlock 'kernel*'
-<<<<<<< HEAD
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 9953864 (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> 71921fa (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 30f6783 (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 
 # Enable DKMS service
 sudo systemctl enable --now dkms
@@ -195,46 +36,12 @@ sudo systemctl enable --now dkms
 # nvidia-release creates an nvidia repo file at /etc/yum.repos.d/amazonlinux-nvidia.repo
 sudo dnf install -y nvidia-release
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
 # Temporary fix: ISO regions cannot use dualstack URLs, remove them from the repo file
 if [ -n "$AIR_GAPPED" ]; then
     echo "ISO regions cannot use dualstack URLs, removing from nvidia repo"
     sudo sed -i 's/\$dualstack//g' /etc/yum.repos.d/amazonlinux-nvidia.repo
 fi
 
-<<<<<<< HEAD
->>>>>>> d4b4655 (fix(gpu): Remove dualstack URLs from nvidia repo for ISO regions)
-=======
 ### Determine NVIDIA driver version ###
 # This script builds and archives three NVIDIA kernel module variants (proprietary,
 # open, and GRID) in /var/lib/dkms-archive. All three must be on the same driver
@@ -242,7 +49,8 @@ fi
 # .run file in S3, while proprietary and open come from the AL2023 nvidia repo.
 #
 # The exact driver version is determined by the security check script
-# (check-update-security.sh) as min(repo, S3 GRID) within the pinned major,
+# (check-update-security.sh) as the highest version available in BOTH the
+# AL2023 nvidia repo AND the S3 GRID bucket within the pinned major,
 # and tracked in the NVIDIA_DRIVER_VERSION file uploaded by Packer.
 
 NVIDIA_DRIVER_FULL_VERSION=$(grep "^nvidia_driver_version_al2023" /tmp/NVIDIA_DRIVER_VERSION | awk -F'"' '{print $2}')
@@ -261,42 +69,6 @@ fi
 
 EC2_GRID_DRIVER_S3_BUCKET="ec2-linux-nvidia-drivers"
 
-<<<<<<< HEAD
-if [[ -z "$skip_grid_driver" ]]; then
-  LATEST_GRID_DRIVER_VERSION=$(aws s3 ls --recursive s3://${EC2_GRID_DRIVER_S3_BUCKET}/ --no-sign-request \
-    | grep -Eo "(NVIDIA-Linux-x86_64-)[0-9]+\.[0-9]+\.[0-9]+(-grid-aws\.run)" \
-    | cut -d'-' -f4 \
-    | sort -V \
-    | tail -1)
-
-  if [[ -z "$LATEST_GRID_DRIVER_VERSION" ]]; then
-    echo "ERROR: Could not determine NVIDIA GRID driver version from S3"
-    exit 1
-  fi
-  echo "Latest GRID .run version in S3: ${LATEST_GRID_DRIVER_VERSION}"
-fi
-
-LATEST_OPEN_MODULE_VERSION=$(dnf repoquery --latest=1 --arch=noarch --queryformat "%{version}" "kmod-nvidia-open-dkms" 2>/dev/null | sort -V | tail -1)
-
-if [[ -z "$LATEST_OPEN_MODULE_VERSION" ]]; then
-  echo "ERROR: Could not determine NVIDIA open module version from repo"
-  exit 1
-fi
-echo "Latest open kmod version in repo: ${LATEST_OPEN_MODULE_VERSION}"
-
-if [[ -n "$skip_grid_driver" ]]; then
-  # No GRID driver available in this region, use open module version directly
-  NVIDIA_DRIVER_FULL_VERSION="$LATEST_OPEN_MODULE_VERSION"
-else
-  # Use the lower version to ensure both sources can provide it
-  NVIDIA_DRIVER_FULL_VERSION=$(printf '%s\n%s\n' "$LATEST_GRID_DRIVER_VERSION" "$LATEST_OPEN_MODULE_VERSION" | sort -V | head -1)
-fi
-
-echo "Selected NVIDIA driver version: ${NVIDIA_DRIVER_FULL_VERSION}"
-
->>>>>>> 927c5e8 (bugfix: install GRID driver from .run file to include nvidia-gridd for g6f vGPU licensing)
-=======
->>>>>>> 856640b (pin nvidia major ver)
 ### Kernel Module Archive Functions ###
 # These functions pre-compile and archive different NVIDIA driver variants
 # This allows runtime switching between proprietary, open-source, and GRID drivers
@@ -403,78 +175,6 @@ archive-open-kmod
 ### Install GPU Drivers and Required Packages ###
 # NVIDIA installation doc: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/amazon-linux.html
 # Amazon Linux 2023 repost: https://repost.aws/articles/ARwfQMxiC-QMOgWykD9mco1w/install-nvidia-gpu-driver-cuda-toolkit-nvidia-container-toolkit-on-amazon-ec2-instances-running-amazon-linux-2023-al2023
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# Install NVIDIA drivers and tools
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-# Install NVIDIA drivers and tools
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-# Install NVIDIA drivers and tools
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
-# Install NVIDIA drivers and tools
-<<<<<<< HEAD
->>>>>>> 2d4bc5e (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 9953864 (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
-=======
-=======
-# Install NVIDIA drivers and tools
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> 71921fa (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 30f6783 (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
-# Install NVIDIA drivers and tools
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-sudo dnf install -y nvidia-open \
-    nvidia-fabric-manager \
-    pciutils \
-    xorg-x11-server-Xorg \
-    nvidia-container-toolkit \
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 95bd20b (Switch AL2023 GPU AMI from legacy OCI hooks to CDI (#541))
-    nvidia-persistenced
-=======
 sudo dnf install -y \
     "nvidia-driver-${NVIDIA_DRIVER_FULL_VERSION}" \
     "nvidia-driver-cuda-${NVIDIA_DRIVER_FULL_VERSION}" \
@@ -486,111 +186,16 @@ sudo dnf install -y \
     pciutils \
     xorg-x11-server-Xorg \
     nvidia-container-toolkit
->>>>>>> 927c5e8 (bugfix: install GRID driver from .run file to include nvidia-gridd for g6f vGPU licensing)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 36fecac (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
 # Lock NVIDIA packages to prevent automatic updates
 # Updates can break compatibility between driver and kernel modules
-sudo dnf versionlock 'nvidia*' 'kmod*' 'libnvidia*'
+sudo dnf versionlock 'nvidia*' 'kmod*' 'libnvidia*' 'xorg*'
 
 # Ensure gridd.conf exists for the nvidia-gridd service when it starts up
 sudo mkdir -p /etc/nvidia
 echo "EnableUI=FALSE" | sudo tee /etc/nvidia/gridd.conf
 
 ### P6 Instance Support ###
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-### Package installation and setup to support P6 instances
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-### Package installation and setup to support P6 instances
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-### Package installation and setup to support P6 instances
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-    oci-add-hooks \
-    nvidia-persistenced
-
-<<<<<<< HEAD
-### Package installation and setup to support P6 instances
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2d4bc5e (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 9953864 (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
-=======
-=======
-### Package installation and setup to support P6 instances
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> 71921fa (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 30f6783 (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-# Lock NVIDIA packages to prevent automatic updates
-# Updates can break compatibility between driver and kernel modules
-sudo dnf versionlock 'nvidia*' 'kmod*' 'libnvidia*'
-
-### P6 Instance Support ###
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # Install base requirements
 sudo dnf install -y libibumad infiniband-diags nvlsm
 
@@ -600,35 +205,6 @@ sudo modprobe ib_umad
 # Ensure the ib_umad module is loaded at boot
 echo ib_umad | sudo tee /etc/modules-load.d/ib_umad.conf
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 
 ### Dynamic Driver Loading Setup ###
 # Install boot-time service that detects GPU hardware and loads the right driver
@@ -649,65 +225,6 @@ sudo systemctl enable nvidia-kmod-load.service
 sudo systemctl enable set-nvidia-clocks.service
 
 ### NVIDIA Service Configuration ###
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-### Configure NVIDIA Services
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-### Configure NVIDIA Services
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
-### Configure NVIDIA Services
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
-### Configure NVIDIA Services
-<<<<<<< HEAD
->>>>>>> 2d4bc5e (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 9953864 (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
-=======
-=======
-### Configure NVIDIA Services
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> 71921fa (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 30f6783 (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
-### Configure NVIDIA Services
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 # The Fabric Manager service needs to be started and enabled on EC2 P4d instances
 # in order to configure NVLinks and NVSwitches
 sudo systemctl enable nvidia-fabricmanager
@@ -715,89 +232,7 @@ sudo systemctl enable nvidia-fabricmanager
 # NVIDIA Persistence Daemon needs to be started and enabled on P5 instances
 # to maintain persistent software state in the NVIDIA driver.
 sudo systemctl enable nvidia-persistenced
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
 
 ### Cleanup Build-Time Configuration ###
 # Remove the hardcoded DKMS configuration to prevent it from being baked into the AMI
 sudo rm -f /etc/dkms/nvidia.conf
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
-<<<<<<< HEAD
->>>>>>> 2d4bc5e (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> bc3f6bb (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 9953864 (Enable dynamic NVIDIA driver selection)
-<<<<<<< HEAD
->>>>>>> 96c0923 (Enable dynamic NVIDIA driver selection)
-=======
-=======
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> 71921fa (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-<<<<<<< HEAD
->>>>>>> ad8403a (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
-=======
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
->>>>>>> 30f6783 (Enable dynamic NVIDIA driver selection)
->>>>>>> bb1886c (Enable dynamic NVIDIA driver selection)
-=======
->>>>>>> 15f3eb5 (Refactor NVIDIA driver installation on AL2023 GPU AMIs)
-=======
->>>>>>> 79c2f7f (Enable dynamic NVIDIA driver selection)
