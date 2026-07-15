@@ -248,6 +248,16 @@ build {
   }
 
   provisioner "shell" {
+    environment_vars = [
+      "DCGM_VERSION=${var.dcgm_version_al2023}",
+      "AIR_GAPPED=${var.air_gapped}"
+    ]
+    execute_command = "{{.Vars}} bash '{{.Path}}'"
+    script = "scripts/al2023/gpu/install-dcgm.sh"
+    only   = ["amazon-ebs.al2023gpu"]
+  }
+
+  provisioner "shell" {
     execute_command = "{{.Vars}} bash '{{.Path}}'"
     inline_shebang = "/bin/sh -ex"
     inline = [
