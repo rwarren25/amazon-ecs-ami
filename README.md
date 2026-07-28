@@ -1,8 +1,8 @@
 # ECS-optimized AMI Build Recipes
 > [!IMPORTANT]
 > The ECS-optimized Amazon Linux 1 AMI (AL1) has reached its end-of-life (EOL) on September 15, 2025.
-> The ECS-optimized Amazon Linux 2 AMI (AL2) will reach its EOL on June 30, 2026, mirroring the same EOL date of the upstream [Amazon Linux 2 Operating System](https://aws.amazon.com/amazon-linux-2/faqs).
-> We encourage customers to upgrade their applications to use Amazon Linux 2023, which includes long term support through 2028.
+> The ECS-optimized Amazon Linux 2 AMI (AL2) has reached its EOL on June 30, 2026, mirroring the same EOL date of the upstream [Amazon Linux 2 Operating System](https://aws.amazon.com/amazon-linux-2/faqs).
+> We encourage customers to upgrade their applications to use Amazon Linux 2023, which includes long term support [through 2029](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html#support-info-by-support-statement-eol).
 
 This is a [packer](https://packer.io) recipe for creating an ECS-optimized AMI.
 It will create a private AMI in whatever account you are running it in.
@@ -73,7 +73,14 @@ packer docs: https://www.packer.io/docs/builders/amazon#iam-task-or-instance-rol
 
 ## Version-locked packages in AL2023 ECS GPU AMIs
 
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
+Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include:
+
+- NVIDIA drivers (`nvidia*`)
+- Kernel modules (`kmod*`)
+- NVIDIA libraries (`libnvidia*`)
+- Kernel packages (`kernel*`)
+- Xorg server packages (`xorg*`)
+- DCGM library (`datacenter-gpu-manager-*`)
 
 > [!NOTE]
 > This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
@@ -85,8 +92,8 @@ To prevent unintended modifications, the `dnf versionlock` plugin is used on the
 If you wish to modify a locked package, you can:
 ```
 # unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
+sudo dnf versionlock delete $PACKAGE_NAME
+# unlock all packages
 sudo dnf versionlock clear
 ```
 > [!IMPORTANT]
@@ -100,290 +107,6 @@ sudo dnf versionlock clear
 echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
 
-<<<<<<< HEAD
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-
-## Memory Overcommit Fix for g6f.large instance type
-
-`g6f.large` instances require memory overcommit configuration to run ECS tasks with NVIDIA GPU support. Add this to your EC2 UserData or run directly on the instance:
-
-```bash
-echo 'vm.overcommit_memory = 1' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-## Version-locked packages in AL2023 ECS GPU AMIs
-
-Certain packages are critical for correct, performant behavior of GPU functionality in AL2023 ECS GPU AMIs. These include: - NVIDIA drivers (`nvidia*`) - Kernel modules (`kmod*`) - NVIDIA libraries (`libnvidia*`) - Kernel packages (`kernel*`)
-
-> [!NOTE]
-> This is not an exhaustive list. The complete list of locked packages are available with `dnf versionlock list`
-
-These packages are version-locked to ensure stability and prevent unintentional changes that could disrupt GPU workloads. As a result, these packages should generally be modified within the bounds of a managed process that gracefully handles potential issues and maintains GPU functionality.
-
-To prevent unintended modifications, the `dnf versionlock` plugin is used on these packages.
-
-If you wish to modify a locked package, you can:
-```
-# unlock a single package
-sudo dnf versionlock delete $PACKAGE_NAME 
-# unlock all packages 
-sudo dnf versionlock clear
-```
-> [!IMPORTANT]
-> When updates to these packages are necessary, customers should consider using the latest AMI version that includes the required updates. If updating existing instances is required, a careful approach involving unlocking, updating, and re-locking packages should be employed, always ensuring GPU functionality is maintained throughout the process.
-=======
->>>>>>> 8fb9159 (README update to support g6f.large instance types)
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
