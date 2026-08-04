@@ -250,7 +250,6 @@ build {
 
   provisioner "shell" {
     environment_vars = [
-      "DCGM_VERSION=${var.dcgm_version_al2023}",
       "AIR_GAPPED=${var.air_gapped}"
     ]
     execute_command = "{{.Vars}} bash '{{.Path}}'"
