@@ -48,7 +48,7 @@ variable "block_device_size_gb" {
 variable "ecs_agent_version" {
   type        = string
   description = "ECS agent version to build AMI with."
-  default     = "1.106.0"
+  default     = "1.106.1"
 }
 
 variable "ecs_init_rev" {
@@ -265,9 +265,9 @@ variable "nvidia_driver_major_al2023" {
   default     = "580"
 }
 
-variable "dcgm_major_al2023" {
+variable "dcgm_version_al2023" {
   type        = string
-  description = "Pinned DCGM major version for AL2023 GPU AMIs. Only versions within this major will be installed."
+  description = "DCGM major version for AL2023 GPU AMIs. Used to install the datacenter-gpu-manager-4-core package."
   default     = "4"
 }
 
